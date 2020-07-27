@@ -1,0 +1,2996 @@
+fileFormatVersion: 2
+guid: c4f2b8d53870d4748b849a43bd475580
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2262122312561619570
+    second: link_walking_0
+  - first:
+      213: -1130002535681212540
+    second: link_walking_1
+  - first:
+      213: -8729490586263656737
+    second: link_walking_2
+  - first:
+      213: 3764731544894960468
+    second: link_walking_3
+  - first:
+      213: -7811596730586822631
+    second: link_walking_4
+  - first:
+      213: 1495802931786965077
+    second: link_walking_5
+  - first:
+      213: -2770129517289628794
+    second: link_walking_6
+  - first:
+      213: 4401850345635980919
+    second: link_walking_7
+  - first:
+      213: 4293498719714732787
+    second: link_walking_8
+  - first:
+      213: -581350400712059129
+    second: link_walking_9
+  - first:
+      213: -1003115258631645036
+    second: link_walking_10
+  - first:
+      213: 4230488256608555731
+    second: link_walking_11
+  - first:
+      213: 6138396411634718664
+    second: link_walking_12
+  - first:
+      213: 2851975809287796661
+    second: link_walking_13
+  - first:
+      213: 9093691984246870102
+    second: link_walking_14
+  - first:
+      213: -7742167577532890093
+    second: link_walking_15
+  - first:
+      213: -6115575070450305119
+    second: link_walking_16
+  - first:
+      213: -8070826580063014455
+    second: link_walking_17
+  - first:
+      213: 5739417277971202405
+    second: link_walking_18
+  - first:
+      213: 3946162405667324754
+    second: link_walking_19
+  - first:
+      213: -2975548324747853332
+    second: link_walking_20
+  - first:
+      213: 74592256569009878
+    second: link_walking_21
+  - first:
+      213: -8874086626898877758
+    second: link_walking_22
+  - first:
+      213: 1867054771180334996
+    second: link_walking_23
+  - first:
+      213: -5626567495607092038
+    second: link_walking_24
+  - first:
+      213: 5688931922439949688
+    second: link_walking_25
+  - first:
+      213: -4651095597037648604
+    second: link_walking_26
+  - first:
+      213: -7076716170847618057
+    second: link_walking_27
+  - first:
+      213: 3797179919168433384
+    second: link_walking_28
+  - first:
+      213: -5991352095958388814
+    second: link_walking_29
+  - first:
+      213: -7478406575877860036
+    second: link_walking_30
+  - first:
+      213: 1590184396757770418
+    second: link_walking_31
+  - first:
+      213: -8982719175514799404
+    second: link_walking_32
+  - first:
+      213: 2440194703973055786
+    second: link_walking_33
+  - first:
+      213: -4791367215324152525
+    second: link_walking_34
+  - first:
+      213: -1499264929382920246
+    second: link_walking_35
+  - first:
+      213: 6521160743362282490
+    second: link_walking_36
+  - first:
+      213: -3747702607582663329
+    second: link_walking_37
+  - first:
+      213: 4368864307323653591
+    second: link_walking_38
+  - first:
+      213: 7846969040546744570
+    second: link_walking_39
+  - first:
+      213: -1055775443086491231
+    second: link_walking_40
+  - first:
+      213: 3650269851289467318
+    second: link_walking_41
+  - first:
+      213: -2632173575264634143
+    second: link_walking_42
+  - first:
+      213: 1388746266430670492
+    second: link_walking_43
+  - first:
+      213: 6978921173414214854
+    second: link_walking_44
+  - first:
+      213: -3030474131629059230
+    second: link_walking_45
+  - first:
+      213: 6603217228599688586
+    second: link_walking_46
+  - first:
+      213: -8733595934186392168
+    second: link_walking_47
+  - first:
+      213: -109060635521917348
+    second: link_walking_48
+  - first:
+      213: -816635112778169123
+    second: link_walking_49
+  - first:
+      213: 7741071874524571361
+    second: link_walking_50
+  - first:
+      213: 586364476462586735
+    second: link_walking_51
+  - first:
+      213: 7032630260065963949
+    second: link_walking_52
+  - first:
+      213: 8923833454488220318
+    second: link_walking_53
+  - first:
+      213: 9199986142203464544
+    second: link_walking_54
+  - first:
+      213: -2040722640964787293
+    second: link_walking_55
+  - first:
+      213: -1012127381261457870
+    second: link_walking_56
+  - first:
+      213: 2374967953828510925
+    second: link_walking_57
+  - first:
+      213: -958208321377832535
+    second: link_walking_58
+  - first:
+      213: 2982952001664641381
+    second: link_walking_59
+  - first:
+      213: 5217942689951301457
+    second: link_walking_60
+  - first:
+      213: 4710123981700686018
+    second: link_walking_61
+  - first:
+      213: 1776077564406865212
+    second: link_walking_62
+  - first:
+      213: -3804960595680629277
+    second: link_walking_63
+  - first:
+      213: 4923035430381369350
+    second: link_walking_64
+  - first:
+      213: -459846292823134943
+    second: link_walking_65
+  - first:
+      213: 8559705042663218346
+    second: link_walking_66
+  - first:
+      213: 8757912681523621404
+    second: link_walking_67
+  - first:
+      213: 2521578351991904833
+    second: link_walking_68
+  - first:
+      213: -1197839885711514622
+    second: link_walking_69
+  - first:
+      213: -6933247544691399856
+    second: link_walking_70
+  - first:
+      213: 8693998414770458298
+    second: link_walking_71
+  - first:
+      213: 8814599419008052450
+    second: link_walking_72
+  - first:
+      213: -2839557967098146652
+    second: link_walking_73
+  - first:
+      213: -152730456310504347
+    second: link_walking_74
+  - first:
+      213: -5546063252460058489
+    second: link_walking_75
+  - first:
+      213: 2301427215037494944
+    second: link_walking_76
+  - first:
+      213: 6404002117754954557
+    second: link_walking_77
+  - first:
+      213: 202993752370589965
+    second: link_walking_78
+  - first:
+      213: 262542192202349364
+    second: link_walking_79
+  - first:
+      213: 2474597822883642333
+    second: link_walking_80
+  - first:
+      213: -3879903068917770868
+    second: link_walking_81
+  - first:
+      213: 7965361890084861709
+    second: link_walking_82
+  - first:
+      213: 6425630690134315963
+    second: link_walking_83
+  - first:
+      213: -7437711288798655310
+    second: link_walking_84
+  - first:
+      213: 8940965591765630205
+    second: link_walking_85
+  - first:
+      213: -7624842439091336573
+    second: link_walking_86
+  - first:
+      213: -147214863378275250
+    second: link_walking_87
+  - first:
+      213: 6251254842346813551
+    second: link_walking_88
+  - first:
+      213: 996156525588035902
+    second: link_walking_89
+  - first:
+      213: -7184977061864995891
+    second: link_walking_90
+  - first:
+      213: 8150105268030345612
+    second: link_walking_91
+  - first:
+      213: 4116085122967136811
+    second: link_walking_92
+  - first:
+      213: 5286072734720243571
+    second: link_walking_93
+  - first:
+      213: 6770778721348021916
+    second: link_walking_94
+  - first:
+      213: 7298752108249755751
+    second: link_walking_95
+  - first:
+      213: -7143290658272547963
+    second: link_walking_96
+  - first:
+      213: -485681613527192718
+    second: link_walking_97
+  - first:
+      213: 453960686690963085
+    second: link_walking_98
+  - first:
+      213: -3037235859360417375
+    second: link_walking_99
+  - first:
+      213: -1611977721054832797
+    second: link_walking_100
+  - first:
+      213: 2869063609614255739
+    second: link_walking_101
+  - first:
+      213: 4550438935415527971
+    second: link_walking_102
+  - first:
+      213: 6694549765061761657
+    second: link_walking_103
+  - first:
+      213: -4874470511353356803
+    second: link_walking_104
+  - first:
+      213: -2289209722838447636
+    second: link_walking_105
+  - first:
+      213: 4230601581018531898
+    second: link_walking_106
+  - first:
+      213: 6118783875221345124
+    second: link_walking_107
+  - first:
+      213: -7829029650681792520
+    second: link_walking_108
+  - first:
+      213: 4973112237957287369
+    second: link_walking_109
+  - first:
+      213: -8661198635609702529
+    second: link_walking_110
+  - first:
+      213: 5161681656252895157
+    second: link_walking_111
+  - first:
+      213: 4885958322248483085
+    second: link_walking_112
+  - first:
+      213: 8931016322660712104
+    second: link_walking_113
+  - first:
+      213: -5490847546877432783
+    second: link_walking_114
+  - first:
+      213: 566652555428521708
+    second: link_walking_115
+  - first:
+      213: 7052607874247948712
+    second: link_walking_116
+  - first:
+      213: 6403553499298445749
+    second: link_walking_117
+  - first:
+      213: -3360054384661943715
+    second: link_walking_118
+  - first:
+      213: 6604169865406690620
+    second: link_walking_119
+  - first:
+      213: 2853603894751660397
+    second: link_walking_120
+  - first:
+      213: 6431724391149795794
+    second: link_walking_121
+  - first:
+      213: 149338253135813459
+    second: link_walking_122
+  - first:
+      213: -4720864447523590741
+    second: link_walking_123
+  - first:
+      213: -2962780363144018120
+    second: link_walking_124
+  - first:
+      213: 1466720286781088962
+    second: link_walking_125
+  - first:
+      213: 2213702358894364541
+    second: link_walking_126
+  - first:
+      213: 77057228473200543
+    second: link_walking_127
+  - first:
+      213: 5783509267895914437
+    second: link_walking_128
+  - first:
+      213: 1172302337688555767
+    second: link_walking_129
+  - first:
+      213: -1386051070270915008
+    second: link_walking_130
+  - first:
+      213: 7565475408984094303
+    second: link_walking_131
+  - first:
+      213: 15858077942697082
+    second: link_walking_132
+  - first:
+      213: 5434829235480813098
+    second: link_walking_133
+  - first:
+      213: -7990219532322669533
+    second: link_walking_134
+  - first:
+      213: -3605269825187434416
+    second: link_walking_135
+  - first:
+      213: 170111105822560557
+    second: link_walking_136
+  - first:
+      213: -1986537862616459295
+    second: link_walking_137
+  - first:
+      213: -7701038307234819092
+    second: link_walking_138
+  - first:
+      213: -4882381178897263089
+    second: link_walking_139
+  - first:
+      213: -2813327839519065467
+    second: link_walking_140
+  - first:
+      213: 6410957287793149015
+    second: link_walking_141
+  - first:
+      213: 3384593671887046402
+    second: link_walking_142
+  - first:
+      213: -8871476813420785294
+    second: link_walking_143
+  - first:
+      213: -2608543447820778392
+    second: link_walking_144
+  - first:
+      213: -8592150080061666311
+    second: link_walking_145
+  - first:
+      213: -8495091404990624618
+    second: link_walking_146
+  - first:
+      213: -4927006855369637568
+    second: link_walking_147
+  - first:
+      213: 8627505559685812731
+    second: link_walking_148
+  - first:
+      213: 614045992311078641
+    second: link_walking_149
+  - first:
+      213: 6841219214833438708
+    second: link_walking_150
+  - first:
+      213: 7333683415771573639
+    second: link_walking_151
+  - first:
+      213: 2634938417821151705
+    second: link_walking_152
+  - first:
+      213: 7279038781256693966
+    second: link_walking_153
+  - first:
+      213: -8342311935473425873
+    second: link_walking_154
+  - first:
+      213: -4632087292854818511
+    second: link_walking_155
+  - first:
+      213: 1827556119678572289
+    second: link_walking_156
+  - first:
+      213: -8113052231151010264
+    second: link_walking_157
+  - first:
+      213: 3585830909354960468
+    second: link_walking_158
+  - first:
+      213: -4758320367301169374
+    second: link_walking_159
+  - first:
+      213: 4870756272696024640
+    second: link_walking_160
+  - first:
+      213: -550250662799916522
+    second: link_walking_161
+  - first:
+      213: 5942710590901157475
+    second: link_walking_162
+  - first:
+      213: -8351110354377667000
+    second: link_walking_163
+  - first:
+      213: 621076107959387278
+    second: link_walking_164
+  - first:
+      213: -1799962368297913069
+    second: link_walking_165
+  - first:
+      213: 7925749338952613824
+    second: link_walking_166
+  - first:
+      213: -5491742604349673798
+    second: link_walking_167
+  - first:
+      213: -3940668936715584497
+    second: link_walking_168
+  - first:
+      213: 5526096788855862257
+    second: link_walking_169
+  - first:
+      213: -3186127660268184342
+    second: link_walking_170
+  - first:
+      213: 2473524586455900472
+    second: link_walking_171
+  - first:
+      213: -3865871557037371970
+    second: link_walking_172
+  - first:
+      213: 8817637091135775689
+    second: link_walking_173
+  - first:
+      213: -3781771935154663015
+    second: link_walking_174
+  - first:
+      213: -2403134854459254263
+    second: link_walking_175
+  - first:
+      213: -8258583081766425118
+    second: link_walking_176
+  - first:
+      213: -7835449997264572318
+    second: link_walking_177
+  - first:
+      213: -5005975370192876848
+    second: link_walking_178
+  - first:
+      213: -6304824806937112325
+    second: link_walking_179
+  - first:
+      213: 1803831157812763637
+    second: link_walking_180
+  - first:
+      213: 5968405276297830707
+    second: link_walking_181
+  - first:
+      213: 3779483095273612238
+    second: link_walking_182
+  - first:
+      213: -869563686844171041
+    second: link_walking_183
+  - first:
+      213: 4694466126392233211
+    second: link_walking_184
+  - first:
+      213: 1035745362708573070
+    second: link_walking_185
+  - first:
+      213: 2069465318080462295
+    second: link_walking_186
+  - first:
+      213: -5550553850047041967
+    second: link_walking_187
+  - first:
+      213: 5624064783296085190
+    second: link_walking_188
+  - first:
+      213: -865408184362766164
+    second: link_walking_189
+  - first:
+      213: -3170812166208824406
+    second: link_walking_190
+  - first:
+      213: -3796888825024413834
+    second: link_walking_191
+  - first:
+      213: -8913736956709045109
+    second: link_walking_192
+  - first:
+      213: 3690559148142903783
+    second: link_walking_193
+  - first:
+      213: -5231458964094258033
+    second: link_walking_194
+  - first:
+      213: 1585549332298191019
+    second: link_walking_195
+  - first:
+      213: -5180009690608612612
+    second: link_walking_196
+  - first:
+      213: 8030127967155049928
+    second: link_walking_197
+  - first:
+      213: -2397311906926462609
+    second: link_walking_198
+  - first:
+      213: -1540002391436185411
+    second: link_walking_199
+  - first:
+      213: -5405459720568613265
+    second: link_walking_200
+  - first:
+      213: 1253781868483111988
+    second: link_walking_201
+  - first:
+      213: 4069109382242829396
+    second: link_walking_202
+  - first:
+      213: -3945168098169027755
+    second: link_walking_203
+  - first:
+      213: -4997810257481132481
+    second: link_walking_204
+  - first:
+      213: 8442488201756010047
+    second: link_walking_205
+  - first:
+      213: 1618359042487325692
+    second: link_walking_206
+  - first:
+      213: 1340839629600440604
+    second: link_walking_207
+  - first:
+      213: 251059851940657562
+    second: link_walking_208
+  - first:
+      213: 1562117660845217179
+    second: link_walking_209
+  - first:
+      213: -5707917709840042029
+    second: link_walking_210
+  - first:
+      213: 2292864537195549351
+    second: link_walking_211
+  - first:
+      213: 8132881999338304549
+    second: link_walking_212
+  - first:
+      213: 2350256088616511330
+    second: link_walking_213
+  - first:
+      213: -3875612281067955576
+    second: link_walking_214
+  - first:
+      213: 6432348801840468763
+    second: link_walking_215
+  - first:
+      213: 7668526174248716100
+    second: link_walking_216
+  - first:
+      213: -3794070126110223284
+    second: link_walking_217
+  - first:
+      213: -2781379375166818575
+    second: link_walking_218
+  - first:
+      213: 7434923737483162127
+    second: link_walking_219
+  - first:
+      213: 2086699875500980858
+    second: link_walking_220
+  - first:
+      213: -1325922481863849509
+    second: link_walking_221
+  - first:
+      213: -4061251025967422744
+    second: link_walking_222
+  - first:
+      213: 3982901959212613327
+    second: link_walking_223
+  - first:
+      213: 7001697183600934792
+    second: link_walking_224
+  - first:
+      213: -1758125385797205309
+    second: link_walking_225
+  - first:
+      213: -5358252967575560289
+    second: link_walking_226
+  - first:
+      213: -3117362020299642222
+    second: link_walking_227
+  - first:
+      213: 5561905180016546331
+    second: link_walking_228
+  - first:
+      213: -6818667274276276501
+    second: link_walking_229
+  - first:
+      213: -4717703051820566438
+    second: link_walking_230
+  - first:
+      213: -957724746234968681
+    second: link_walking_231
+  - first:
+      213: 8700659477490356191
+    second: link_walking_232
+  - first:
+      213: -4742931955881127356
+    second: link_walking_233
+  - first:
+      213: 8726924303297804388
+    second: link_walking_234
+  - first:
+      213: 4404114639392178127
+    second: link_walking_235
+  - first:
+      213: -1948789053315812634
+    second: link_walking_236
+  - first:
+      213: -2161068492118385238
+    second: link_walking_237
+  - first:
+      213: 811065839573313557
+    second: link_walking_238
+  - first:
+      213: -5825397924071863775
+    second: link_walking_239
+  - first:
+      213: -6439851734727392022
+    second: link_walking_240
+  - first:
+      213: -58558893365320652
+    second: link_walking_241
+  - first:
+      213: 102167895222073738
+    second: link_walking_242
+  - first:
+      213: 1299746737663349779
+    second: link_walking_243
+  - first:
+      213: 6279579523383137687
+    second: link_walking_244
+  - first:
+      213: 6489180820703521609
+    second: link_walking_245
+  - first:
+      213: -8447117485501272115
+    second: link_walking_246
+  - first:
+      213: 8110053503086108292
+    second: link_walking_247
+  - first:
+      213: 3675457507121112061
+    second: link_walking_248
+  - first:
+      213: 964040042835400380
+    second: link_walking_249
+  - first:
+      213: 5886079163078123508
+    second: link_walking_250
+  - first:
+      213: 9198727384048258318
+    second: link_walking_251
+  - first:
+      213: 119258753785794533
+    second: link_walking_252
+  - first:
+      213: -4889828252480047434
+    second: link_walking_253
+  - first:
+      213: -8833968515582272076
+    second: link_walking_254
+  - first:
+      213: -6028470760668555709
+    second: link_walking_255
+  - first:
+      213: -2391982143902968853
+    second: link_walking_256
+  - first:
+      213: -6897235203071875964
+    second: link_walking_257
+  - first:
+      213: -1137075840477974835
+    second: link_walking_258
+  - first:
+      213: -2046903237300336685
+    second: link_walking_259
+  - first:
+      213: 3669369713778121443
+    second: link_walking_260
+  - first:
+      213: -5583412037349431595
+    second: link_walking_261
+  - first:
+      213: 5377984885811602674
+    second: link_walking_262
+  - first:
+      213: 6492895691708732888
+    second: link_walking_263
+  - first:
+      213: 105830293329227215
+    second: link_walking_264
+  - first:
+      213: 2628862016370850926
+    second: link_walking_265
+  - first:
+      213: -8446410393511737914
+    second: link_walking_266
+  - first:
+      213: -8838529683193986709
+    second: link_walking_267
+  - first:
+      213: -8838919934797324242
+    second: link_walking_268
+  - first:
+      213: 4152110972647036262
+    second: link_walking_269
+  - first:
+      213: 882933796992225247
+    second: link_walking_270
+  - first:
+      213: 7689403527304271579
+    second: link_walking_271
+  - first:
+      213: -3993614942787717809
+    second: link_walking_272
+  - first:
+      213: 6129495722705286894
+    second: link_walking_273
+  - first:
+      213: -6362663154433439325
+    second: link_walking_274
+  - first:
+      213: -589830761464361735
+    second: link_walking_275
+  - first:
+      213: -2855902116113559481
+    second: link_walking_276
+  - first:
+      213: -5145517109408024665
+    second: link_walking_277
+  - first:
+      213: 8941397084621300795
+    second: link_walking_278
+  - first:
+      213: 5364131751256359965
+    second: link_walking_279
+  - first:
+      213: -5788869856734044331
+    second: link_walking_280
+  - first:
+      213: -8090012340572503813
+    second: link_walking_281
+  - first:
+      213: 4692359593230903085
+    second: link_walking_282
+  - first:
+      213: -440573193743289141
+    second: link_walking_283
+  - first:
+      213: -6573833165945666375
+    second: link_walking_284
+  - first:
+      213: -3952494009059582446
+    second: link_walking_285
+  - first:
+      213: 8898494496438959615
+    second: link_walking_286
+  - first:
+      213: -6357339737333150279
+    second: link_walking_287
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: link_walking_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d8741fdb35b90e0800000000000000
+      internalID: -2262122312561619570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f3e694eac6150f0800000000000000
+      internalID: -1130002535681212540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_2
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd663a7009e9ad680800000000000000
+      internalID: -8729490586263656737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453fb28c4630f3430800000000000000
+      internalID: 3764731544894960468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91805c04922a79390800000000000000
+      internalID: -7811596730586822631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550662367d822c410800000000000000
+      internalID: 1495802931786965077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_6
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b902c71e58e89d0800000000000000
+      internalID: -2770129517289628794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_7
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776201e3193861d30800000000000000
+      internalID: 4401850345635980919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_8
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fae0307652959b30800000000000000
+      internalID: 4293498719714732787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707d68304e0aee7f0800000000000000
+      internalID: -581350400712059129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4989c7cacf73412f0800000000000000
+      internalID: -1003115258631645036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_11
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 224
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d25d91c7a6b5ba30800000000000000
+      internalID: 4230488256608555731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c715068307ff2550800000000000000
+      internalID: 6138396411634718664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b73b9c53e0449720800000000000000
+      internalID: 2851975809287796661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6501ad1eda8433e70800000000000000
+      internalID: 9093691984246870102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_15
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3140b95ab9b4e8490800000000000000
+      internalID: -7742167577532890093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_16
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7339800ec112ba0800000000000000
+      internalID: -6115575070450305119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_17
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1309b8cf9aeff80800000000000000
+      internalID: -8070826580063014455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_18
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56186370b9186af40800000000000000
+      internalID: 5739417277971202405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_19
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2534dcfdcc593c630800000000000000
+      internalID: 3946162405667324754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce14563509ab4b6d0800000000000000
+      internalID: -2975548324747853332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_21
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d66acb1341090100800000000000000
+      internalID: 74592256569009878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2e5a1da39e8d480800000000000000
+      internalID: -8874086626898877758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_23
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 192
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fe66c1c6c19e910800000000000000
+      internalID: 1867054771180334996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc749f6caa6ae1b0800000000000000
+      internalID: -5626567495607092038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_25
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dc964317523fe40800000000000000
+      internalID: 5688931922439949688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_26
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4250032723df37fb0800000000000000
+      internalID: -4651095597037648604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_27
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb7d5cf2247acd90800000000000000
+      internalID: -7076716170847618057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ece746a40b42b430800000000000000
+      internalID: 3797179919168433384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bfab1423017adca0800000000000000
+      internalID: -5991352095958388814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_30
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c35dade67dc573890800000000000000
+      internalID: -7478406575877860036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_31
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0ad10a848711610800000000000000
+      internalID: 1590184396757770418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2c95a9088f65380800000000000000
+      internalID: -8982719175514799404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_33
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d7a1197205dd120800000000000000
+      internalID: 2440194703973055786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_34
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33db62647e4a18db0800000000000000
+      internalID: -4791367215324152525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_35
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 160
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf0eeb7d7a813be0800000000000000
+      internalID: -1499264929382920246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3c45f3521df7a50800000000000000
+      internalID: 6521160743362282490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_37
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5dea37a55c7dfbc0800000000000000
+      internalID: -3747702607582663329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_38
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ddc8e5b0f251ac30800000000000000
+      internalID: 4368864307323653591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8c64174c806ec60800000000000000
+      internalID: 7846969040546744570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_40
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1cf3804d12951f0800000000000000
+      internalID: -1055775443086491231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_41
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b93d6cf61d58a230800000000000000
+      internalID: 3650269851289467318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_42
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea7e234414a87bd0800000000000000
+      internalID: -2632173575264634143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_43
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9600c51f51d54310800000000000000
+      internalID: 1388746266430670492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc7ec0d4db1ad060800000000000000
+      internalID: 6978921173414214854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_45
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2635d3b55d791f5d0800000000000000
+      internalID: -3030474131629059230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_46
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d7c65851753ab50800000000000000
+      internalID: 6603217228599688586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_47
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 128
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895360b35c80cc680800000000000000
+      internalID: -8733595934186392168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5edcb80ee98c7ef0800000000000000
+      internalID: -109060635521917348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_49
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd40fbf01babaa4f0800000000000000
+      internalID: -816635112778169123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_50
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6edcd1bdfcd6b60800000000000000
+      internalID: 7741071874524571361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_51
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bd578726f232800800000000000000
+      internalID: 586364476462586735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf05e706fbe89160800000000000000
+      internalID: 7032630260065963949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_53
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9274811f33d7db70800000000000000
+      internalID: 8923833454488220318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_54
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06bcd8817aaecaf70800000000000000
+      internalID: 9199986142203464544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_55
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3623cf195eda3e0800000000000000
+      internalID: -2040722640964787293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_56
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236e67c528334f1f0800000000000000
+      internalID: -1012127381261457870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_57
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc72e855c495f020800000000000000
+      internalID: 2374967953828510925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_58
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a17377cb92c3b2f0800000000000000
+      internalID: -958208321377832535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_59
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 96
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569e2498a03956920800000000000000
+      internalID: 2982952001664641381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fb4ec0b3bd96840800000000000000
+      internalID: 5217942689951301457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_61
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c061595ec8bd5140800000000000000
+      internalID: 4710123981700686018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_62
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d13008225e5a810800000000000000
+      internalID: 1776077564406865212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_63
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ede81e6f70123bc0800000000000000
+      internalID: -3804960595680629277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_64
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6083b8cf3a2225440800000000000000
+      internalID: 4923035430381369350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_65
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d2ff8ab3c4e99f0800000000000000
+      internalID: -459846292823134943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_66
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac9f02926e2ac670800000000000000
+      internalID: 8559705042663218346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_67
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1eaa14be2b5a8970800000000000000
+      internalID: 8757912681523621404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_68
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14adac7b6227ef220800000000000000
+      internalID: 2521578351991904833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_69
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204ee5a68fa606fe0800000000000000
+      internalID: -1197839885711514622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_70
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053e1de871828cf90800000000000000
+      internalID: -6933247544691399856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_71
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 64
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abec336de7947a870800000000000000
+      internalID: 8693998414770458298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ece657487fb35a70800000000000000
+      internalID: 8814599419008052450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_73
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a01cf3d21dd798d0800000000000000
+      internalID: -2839557967098146652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_74
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564aa3d857461edf0800000000000000
+      internalID: -152730456310504347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_75
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788454f2bdc6803b0800000000000000
+      internalID: -5546063252460058489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_76
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6f9bccbdf40ff10800000000000000
+      internalID: 2301427215037494944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_77
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3322a90ff59fd850800000000000000
+      internalID: 6404002117754954557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_78
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d013ca50ebd21d200800000000000000
+      internalID: 202993752370589965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_79
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bf5c89bbcb4a300800000000000000
+      internalID: 262542192202349364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb3fe2eb99875220800000000000000
+      internalID: 2474597822883642333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_81
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85553627b0d72ac0800000000000000
+      internalID: -3879903068917770868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_82
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0731fdcf66aa8e60800000000000000
+      internalID: 7965361890084861709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_83
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3dd47711d6c2950800000000000000
+      internalID: 6425630690134315963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc4e315df0f7c890800000000000000
+      internalID: -7437711288798655310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_85
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc3e2e95d0b41c70800000000000000
+      internalID: 8940965591765630205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a43a5233e1f2690800000000000000
+      internalID: -7624842439091336573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_87
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e442eaa9cdcf4fdf0800000000000000
+      internalID: -147214863378275250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_88
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68b586982be0c650800000000000000
+      internalID: 6251254842346813551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_89
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39bc58051f03dd00800000000000000
+      internalID: 996156525588035902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_90
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3053c0e65d94c90800000000000000
+      internalID: -7184977061864995891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_91
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c811df66f8dfa1170800000000000000
+      internalID: 8150105268030345612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ae9b38c954f1930800000000000000
+      internalID: 4116085122967136811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_93
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377b0e93527eb5940800000000000000
+      internalID: 5286072734720243571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_94
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ee8babf53a6fd50800000000000000
+      internalID: 6770778721348021916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: link_walking_95
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7603cdb3f506a4560800000000000000
+      internalID: 7298752108249755751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
