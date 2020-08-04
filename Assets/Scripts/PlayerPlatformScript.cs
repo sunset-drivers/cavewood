@@ -20,7 +20,7 @@ public class PlayerPlatformScript : MonoBehaviour
     private float m_AxisX;
     private float m_AxisY;
     private bool m_IsJumping = false;
-    private bool m_IsGrounded = true;
+    public bool m_IsGrounded = true;
 
     private void Start() {
         animator = GetComponent<Animator>();
@@ -28,13 +28,23 @@ public class PlayerPlatformScript : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();    
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        if(other.gameObject.CompareTag("Ground"))
+            m_IsGrounded = true;
+    }
+
+    private void OnCollisionExit2D(Collision2D other) {
+        if(other.gameObject.CompareTag("Ground"))
+            m_IsGrounded = false;
+    }
+
     private void FixedUpdate() {
 
         m_AxisX = Input.GetAxis("Horizontal");
-        m_AxisY = Input.GetAxis("Vertical");       
+        m_AxisY = rigidbody.velocity.y;       
+        Debug.Log(m_AxisY);
 
-        animator.SetFloat(m_AnimatorAxisXName, m_AxisX);
-        animator.SetFloat(m_AnimatorAxisYName, m_AxisY);
+        animator.SetFloat(m_AnimatorAxisXName, m_AxisX);        
 
         if(m_AxisX < -0.2f){
             sprite.flipX = true;
@@ -42,6 +52,11 @@ public class PlayerPlatformScript : MonoBehaviour
         else if(m_AxisX > 0.2f) {
             sprite.flipX = false;
         }
+
+        if(m_AxisY < -0.5f)
+            animator.SetBool("isFalling", true);
+        else
+            animator.SetBool("isFalling", false);
 
         if(m_IsGrounded && Input.GetButtonDown("Jump"))
             m_IsJumping = true;                     
