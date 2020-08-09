@@ -8,11 +8,9 @@ namespace Cavewood.Models
     [Serializable]
     public class State
     {
-        [SerializeField]
-        public string SceneName;
-        [SerializeField]
-        public Party Party;
-        [SerializeField]
-        public List<string> CompletedCaves;
+        [SerializeField] public string SceneName;
+        [SerializeField] public Vector3 PlayerPosition;
+        [SerializeField] public Party Party;
+        [SerializeField] public List<string> CompletedCaves;
     }
 }

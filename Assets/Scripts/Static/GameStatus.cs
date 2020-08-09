@@ -7,13 +7,15 @@ using UnityEngine.SceneManagement;
 
 public static class GameStatus
 {
-    private static List<GameObject> Members;
-    private static int Morale;
-    private static int Money;
-    private static List<string> CompletedCaves;
+    public static Vector3 PlayerPosition;
+    public static List<GameObject> Members;
+    public static int Morale;
+    public static int Money;
+    public static List<string> CompletedCaves;
 
     public static void SetState(State _State)
     {
+        PlayerPosition = _State.PlayerPosition;
         Members = _State.Party.Members;
         Morale = _State.Party.Morale;
         Money = _State.Party.Money;
@@ -30,8 +32,9 @@ public static class GameStatus
         
         Scene _Scene = SceneManager.GetActiveScene();
 
-        return new State() {
-            SceneName = _Scene.name,
+        return new State() {            
+            SceneName = _Scene.name,            
+            PlayerPosition = PlayerPosition,
             Party = _Party,
             CompletedCaves = CompletedCaves
         };
