@@ -23,7 +23,7 @@ public class GameHandler: MonoBehaviour
         m_State = GameStatus.GetState();    
         m_State.PlayerPosition = m_Player.transform.position;
         string json = JsonUtility.ToJson(m_State);        
-        File.WriteAllText(Application.dataPath + "/Files/save.json", json );
+        File.WriteAllText(Application.persistentDataPath + "save.json", json );
     }
 }
 

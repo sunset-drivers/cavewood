@@ -32,7 +32,7 @@ public class MainMenuHandler : MonoBehaviour {
 
     public void LoadGame()
     {
-        State _State = JsonUtility.FromJson<State>(File.ReadAllText(Application.dataPath + "/Files/save.json"));
+        State _State = JsonUtility.FromJson<State>(File.ReadAllText(Application.persistentDataPath + "save.json"));
         GameStatus.SetState(_State);
         SceneManager.LoadScene(_State.SceneName);
     }
