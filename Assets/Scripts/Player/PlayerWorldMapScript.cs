@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerWorldMapScript : MonoBehaviour
 {    
     private Animator animator;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
 
     [Header("Animator Variables")]
     public string m_AnimatorXAxis = "xAxis";
@@ -18,7 +18,7 @@ public class PlayerWorldMapScript : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -27,11 +27,11 @@ public class PlayerWorldMapScript : MonoBehaviour
         m_yAxis = Input.GetAxisRaw("Vertical");
 
         animator.SetFloat(m_AnimatorXAxis, m_xAxis);
-        animator.SetFloat(m_AnimatorYAxis, m_yAxis);                
+        animator.SetFloat(m_AnimatorYAxis, m_yAxis);         
     }
 
     private void FixedUpdate() 
     {
-        rigidbody.velocity = new Vector2(m_xAxis, m_yAxis) * m_speed;
+        rb.velocity = new Vector2(m_xAxis, m_yAxis) * m_speed;
     }
 }
