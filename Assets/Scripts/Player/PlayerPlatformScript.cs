@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerPlatformScript : MonoBehaviour
 {
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer sprite;
 
@@ -30,7 +30,7 @@ public class PlayerPlatformScript : MonoBehaviour
 
     private void Start() {
         animator = GetComponent<Animator>();
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();    
     }
 
@@ -38,7 +38,7 @@ public class PlayerPlatformScript : MonoBehaviour
         m_IsGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         m_AxisX = Input.GetAxis("Horizontal");
-        m_AxisY = rigidbody.velocity.y;       
+        m_AxisY = rb.velocity.y;       
         Debug.Log(m_AxisY);
 
         animator.SetFloat(m_AnimatorAxisXName, m_AxisX);        
@@ -48,12 +48,12 @@ public class PlayerPlatformScript : MonoBehaviour
             Flip();                                                        
 
         animator.SetFloat(m_AnimatorAxisXName, m_AxisX);        
-        rigidbody.velocity = new Vector2(m_AxisX * m_Speed, rigidbody.velocity.y);                                     
+        rb.velocity = new Vector2(m_AxisX * m_Speed, rb.velocity.y);                                     
     }
 
     void Update(){
         if(m_IsGrounded && Input.GetButtonDown("Jump"))
-           rigidbody.velocity = Vector2.up * m_JumpForce;
+           rb.velocity = Vector2.up * m_JumpForce;
     }
 
     private void Flip(){
