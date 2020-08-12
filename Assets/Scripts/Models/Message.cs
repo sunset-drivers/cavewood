@@ -8,13 +8,9 @@ namespace Cavewood.Models
     [Serializable]
     public class Message
     {
-        [SerializeField]
-        public string Text;
-        [SerializeField]
-        public string SpeakerName;
-        [SerializeField]
-        public Sprite SpeakerImage;    
-        [SerializeField]
-        public bool IsLeftSpeaker;         
+        [SerializeField] public string Text;
+        [SerializeField] public string SpeakerName;
+        [SerializeField] public Sprite SpeakerImage;    
+        [SerializeField] public bool IsLeftSpeaker;         
     }
 }

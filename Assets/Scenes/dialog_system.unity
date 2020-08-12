@@ -453,27 +453,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b81a2348a1ca641a1c1d2842cb7278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Messages:
-  - Text: Bom dia!
-    SpeakerName: "Jos\xE9"
-    SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
-    IsLeftSpeaker: 1
-  - Text: Au Au !
-    SpeakerName: Dog the Douglas
-    SpeakerImage: {fileID: 21300000, guid: a161f8b0bcd7a9048945154a2f179590, type: 3}
-    IsLeftSpeaker: 0
-  - Text: "Como vai voc\xEA?"
-    SpeakerName: "Jos\xE9"
-    SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
-    IsLeftSpeaker: 1
-  - Text: Au au au!
-    SpeakerName: Dog the Douglas
-    SpeakerImage: {fileID: 21300000, guid: a161f8b0bcd7a9048945154a2f179590, type: 3}
-    IsLeftSpeaker: 0
-  SpeakerA: {fileID: 40199896}
-  SpeakerB: {fileID: 1006580348}
-  TextBox: {fileID: 74554198}
-  DialogBox: {fileID: 402150626}
+  DialogueBox:
+    DialogBox: {fileID: 0}
+    SpeakerA: {fileID: 0}
+    SpeakerB: {fileID: 0}
+    TextBox: {fileID: 0}
+  Dialogues:
+  - EventName: teste
+    Messages: []
+  - EventName: aaaaa
+    Messages: []
 --- !u!4 &214195192
 Transform:
   m_ObjectHideFlags: 0
@@ -1242,11 +1231,11 @@ RectTransform:
   m_Father: {fileID: 1699922904}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 50, y: 50}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0.00012207031, y: 0}
   m_SizeDelta: {x: 250, y: 70}
-  m_Pivot: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 1}
 --- !u!114 &1173626160
 MonoBehaviour:
   m_ObjectHideFlags: 0

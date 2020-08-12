@@ -5,12 +5,10 @@ using UnityEngine.UI;
 using Cavewood.Models;
 
 public class DialogManager : MonoBehaviour
-{
-    public List<Message> Messages;        
-    public Image SpeakerA;
-    public Image SpeakerB;
-    public Text TextBox;
-    public GameObject DialogBox;
+{     
+    public DialogueBox DialogueBox;
+    public List<Dialogue> Dialogues;
+    private List<Message> Messages;   
     private Message _ShowingMessage;
     private bool m_DialogStarted = false;
     private int m_Index;
@@ -26,7 +24,7 @@ public class DialogManager : MonoBehaviour
 
     public void StartDialog(){
         m_DialogStarted = true;
-        DialogBox.SetActive(true);     
+        DialogueBox.DialogBox.SetActive(true);     
         NextMessage(true);   
     }
 
@@ -37,7 +35,7 @@ public class DialogManager : MonoBehaviour
         if(m_Index < Messages.Count){
             _ShowingMessage = Messages[m_Index];
             SetSpeaker(_ShowingMessage.IsLeftSpeaker);
-            TextBox.text = _ShowingMessage.Text;
+            DialogueBox.TextBox.text = _ShowingMessage.Text;
         } else {
             ClearDialog();
         }
@@ -46,29 +44,29 @@ public class DialogManager : MonoBehaviour
     private void SetSpeaker(bool _IsLeftSpeaker){
         if(_IsLeftSpeaker){
 
-            if(SpeakerB.sprite != null)                
-                SpeakerB.color = new Color32(50,50,50,150);
+            if(DialogueBox.SpeakerB.sprite != null)                
+                DialogueBox.SpeakerB.color = new Color32(50,50,50,150);
 
-            SpeakerA.color = new Color32(255,255,255,255);
-            SpeakerA.sprite = _ShowingMessage.SpeakerImage;
+            DialogueBox.SpeakerA.color = new Color32(255,255,255,255);
+            DialogueBox.SpeakerA.sprite = _ShowingMessage.SpeakerImage;
         } else {
 
-            if(SpeakerA.sprite != null)               
-                SpeakerA.color = new Color32(50,50,50,150);
+            if(DialogueBox.SpeakerA.sprite != null)               
+                DialogueBox.SpeakerA.color = new Color32(50,50,50,150);
 
-            SpeakerB.color = new Color32(255,255,255,255);
-            SpeakerB.sprite = _ShowingMessage.SpeakerImage;
+            DialogueBox.SpeakerB.color = new Color32(255,255,255,255);
+            DialogueBox.SpeakerB.sprite = _ShowingMessage.SpeakerImage;
         }
     }
 
     private void ClearDialog(){
         m_DialogStarted = false;
-        TextBox.text = "";
-        SpeakerA.sprite = null;
-        SpeakerB.sprite = null;
-        SpeakerA.color = new Color32(255,255,255,0);
-        SpeakerB.color = new Color32(255,255,255,0);
+        DialogueBox.TextBox.text = "";
+        DialogueBox.SpeakerA.sprite = null;
+        DialogueBox.SpeakerB.sprite = null;
+        DialogueBox.SpeakerA.color = new Color32(255,255,255,0);
+        DialogueBox.SpeakerB.color = new Color32(255,255,255,0);
         m_Index = 0;
-        DialogBox.SetActive(false);
+        DialogueBox.DialogBox.SetActive(false);
     }
 }
