@@ -9,9 +9,10 @@ namespace Cavewood.Models
     [Serializable]
     public class DialogueBox
     {
-        [SerializeField] public GameObject DialogBox;
-        [SerializeField] public Image SpeakerA;
-        [SerializeField] public Image SpeakerB;
+        [SerializeField] public GameObject BackgroundPanel;
+        [SerializeField] public Image LeftSpeakerImage;
+        [SerializeField] public Image RightSpeakerImage;
         [SerializeField] public Text TextBox; 
+        [SerializeField] public GameObject ContinueButton;
     }
 }
