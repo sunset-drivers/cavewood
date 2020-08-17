@@ -162,46 +162,46 @@ MonoBehaviour:
     Messages:
     - Text: "Este \xE9 o nosso primeiro dialogo! Haha."
       SpeakerName: Emoji Maneiro
-      SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: dbfb9d02d6bfa38468cc8dd048d0b683, type: 3}
       IsRightSpeaker: 0
     - Text: "\xC9 mesmo, o que voc\xEA acha? Ficou legal?"
       SpeakerName: "Dog\xE3o"
-      SpeakerImage: {fileID: 21300000, guid: a161f8b0bcd7a9048945154a2f179590, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: 6e883695270d4a7478cbab7b74b21bd6, type: 3}
       IsRightSpeaker: 1
     - Text: "Esse par\xE1grafo aqui \xE9 para testar o limite de caracteres que se
         pode colocar dentro do Text Box para ver at\xE9 onde ele quebra :c"
       SpeakerName: "Dog\xE3o"
-      SpeakerImage: {fileID: 21300000, guid: a161f8b0bcd7a9048945154a2f179590, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: 6e883695270d4a7478cbab7b74b21bd6, type: 3}
       IsRightSpeaker: 1
     - Text: Tranquilo, acho que ficou bom!!!
       SpeakerName: Emoji Maneiro
-      SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: dbfb9d02d6bfa38468cc8dd048d0b683, type: 3}
       IsRightSpeaker: 0
     - Text: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAD
       SpeakerName: Emoji Maneiro
-      SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: dbfb9d02d6bfa38468cc8dd048d0b683, type: 3}
       IsRightSpeaker: 0
   - EventName: Second Dialogue
     Messages:
     - Text: "Este \xE9 o segundo dialogo! E dessa vez eu estou na esquerda! Haha!"
       SpeakerName: "Dog\xE3o"
-      SpeakerImage: {fileID: 21300000, guid: a161f8b0bcd7a9048945154a2f179590, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: 6e883695270d4a7478cbab7b74b21bd6, type: 3}
       IsRightSpeaker: 0
     - Text: "Hm.... Muito interessante! Ent\xE3o dessa vez eu fiquei na direita..."
       SpeakerName: Emoji Maneiro
-      SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: dbfb9d02d6bfa38468cc8dd048d0b683, type: 3}
       IsRightSpeaker: 1
     - Text: "Ser\xE1 que isso influencia em algo? Acredito que n\xE3o..."
       SpeakerName: Emoji Maneiro
-      SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: dbfb9d02d6bfa38468cc8dd048d0b683, type: 3}
       IsRightSpeaker: 1
     - Text: "\xC9 preciso tomar cuidado com os bugs hehe!"
       SpeakerName: "Dog\xE3o"
-      SpeakerImage: {fileID: 21300000, guid: a161f8b0bcd7a9048945154a2f179590, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: 6e883695270d4a7478cbab7b74b21bd6, type: 3}
       IsRightSpeaker: 0
     - Text: "Voc\xEA tem raz\xE3o..."
       SpeakerName: Emoji Maneiro
-      SpeakerImage: {fileID: 21300000, guid: af38bfe92ca23094fa70e2d057188ef3, type: 3}
+      SpeakerImage: {fileID: 21300000, guid: dbfb9d02d6bfa38468cc8dd048d0b683, type: 3}
       IsRightSpeaker: 1
 --- !u!4 &214195192
 Transform:
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -256,7 +256,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -293,8 +293,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -60, y: -30}
+  m_AnchoredPosition: {x: 4.5999756, y: -1.8999939}
+  m_SizeDelta: {x: -119.671875, y: -54.57756}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &529299637 stripped
 Transform:
@@ -543,8 +543,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3534a3ac9de351b418952960d715d53d, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1372,6 +1372,7 @@ GameObject:
   - component: {fileID: 2072582702}
   - component: {fileID: 2072582701}
   - component: {fileID: 2072582700}
+  - component: {fileID: 2072582703}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -1395,8 +1396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -9, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &2072582700
 MonoBehaviour:
@@ -1471,7 +1472,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a161f8b0bcd7a9048945154a2f179590, type: 3}
+  m_Sprite: {fileID: -7632292786504573332, guid: e765def86725c124fb1c6d5335f4181b,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1489,3 +1491,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072582698}
   m_CullTransparentMesh: 0
+--- !u!95 &2072582703
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072582698}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bf422790cebf9844bb7c87edd56b6d99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
