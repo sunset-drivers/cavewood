@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Cavewood.Models;
 using Cavewood.Utils;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour, hasTrigger
 {     
     public DialogueBox DialogueBox;
     public float TextSpeed = 1f;
@@ -32,7 +32,7 @@ public class DialogueManager : MonoBehaviour
         }    
     }
 
-    public void StartDialogue(string _EventName)
+    public void Trigger(string _EventName)
     {
         m_DialogueStarted = true;
         DialogueBox.BackgroundPanel.SetActive(true);     

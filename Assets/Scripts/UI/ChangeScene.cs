@@ -48,6 +48,7 @@ public class ChangeScene : MonoBehaviour
         if(m_Clip)
         AudioSource.PlayClipAtPoint(m_Clip, Camera.main.transform.position);
         m_Used = true;
+        Debug.Log(sceneName);
         ScreenManager.Instance.LoadLevel(sceneName);
     }
 
