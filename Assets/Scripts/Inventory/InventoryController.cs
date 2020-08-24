@@ -9,6 +9,7 @@ public class InventoryController : MonoBehaviour
     public int maxInventorySlots;
     public SlotInventoryBehaviour slotPrefab;
     public Transform itemsGrid;
+
     void Start()
     {
         instance = this;   
@@ -68,4 +69,6 @@ public class InventoryController : MonoBehaviour
         }
         return slotToReturn;
     }
+
+
 }

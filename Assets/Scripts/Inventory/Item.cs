@@ -14,6 +14,17 @@ public class Item : MonoBehaviour
     {
         amount += amountToAdd;
     }
+    public void RemoveItem(int amountToRemove = 1)
+    {
+        amount -= amountToRemove;
+        if (amount <= 0)
+            Destroy(gameObject);
+    }
+    public virtual void UseItem()
+    {
+
+    }
+
     public int GetAmount()
     {
         return amount;
