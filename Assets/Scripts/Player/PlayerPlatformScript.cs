@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerPlatformScript : MonoBehaviour
 {
+#region Variables
     [Header("Components")]
-        private Rigidbody2D rb;
+        private Rigidbody2D rb2d;
         private Animator animator;
         private SpriteRenderer sprite;
 
@@ -16,9 +17,14 @@ public class PlayerPlatformScript : MonoBehaviour
         public GameObject hit;
         public bool m_IsGrounded = false;
 
-    [Header("Movement Variables")]
+    [Header("Movement Variables")]     
+        private float m_AxisX = 0.0f;
+        private float m_AxisY = 0.0f;
         public float m_Speed = 5f;
-        public float m_JumpForce = 10f;
+
+    [Header("Jump Variables")]
+        private Vector2 m_JumpDirection;
+        public float m_JumpForce = 10f;        
 
     [Header("Animator Variables")]
         public string m_AnimatorAxisXName;
@@ -26,43 +32,56 @@ public class PlayerPlatformScript : MonoBehaviour
 
     [Header("State Variables")]        
         public bool m_IsFacingRight = true; 
+#endregion
 
-    private void Start() {
+#region PlayerFunctions
+    private void Jump(){
+        //rb2d.velocity = Vector2.up * m_JumpForce; 
+        rb2d.AddForce(Vector2.up * m_JumpForce, ForceMode2D.Force);           
+    }
+
+    private void SetAnimatorParameters(float xAxisValue, float yAxisValue){
+        if(m_AnimatorAxisXName != "")
+            animator.SetFloat(m_AnimatorAxisXName, xAxisValue);            
+        if(m_AnimatorAxisYName != "")
+            animator.SetFloat(m_AnimatorAxisYName, yAxisValue);
+    }
+
+    private void ChangeDirection() {
+        m_IsFacingRight = !m_IsFacingRight; 
+        Vector3 localscale = transform.localScale;
+        transform.localScale = new Vector3(localscale.x * -1, localscale.y, localscale.z);
+    }    
+#endregion
+
+#region RuntimeEvents
+    private void Awake() {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
+        rb2d = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();    
     }
 
-    void FixedUpdate() {
-        m_IsGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+    void Update(){
+        m_AxisX = Input.GetAxis("Horizontal");        
+        bool _Jumped = Input.GetButtonDown("Jump");                
 
-        if(Input.GetButton("Action"))
-            hit.SetActive(true);
+        SetAnimatorParameters(m_AxisX, m_AxisY);
 
-        float _AxisX = Input.GetAxis("Horizontal");
-        float _AxisY = rb.velocity.y;               
+        if(m_IsGrounded && _Jumped)
+            Jump();        
 
-        if(m_AnimatorAxisXName != "")
-            animator.SetFloat(m_AnimatorAxisXName, _AxisX);        
-        
-        if(m_AnimatorAxisYName != "")
-            animator.SetFloat(m_AnimatorAxisYName, _AxisY);
-
-        if( _AxisX > 0f && !m_IsFacingRight || _AxisX < -0f && m_IsFacingRight){
-            m_IsFacingRight = !m_IsFacingRight;               
-        }
-
-        sprite.flipX = !m_IsFacingRight;
-        rb.velocity = new Vector2(_AxisX * m_Speed, rb.velocity.y);                                     
+        if(m_AxisX > 0f && !m_IsFacingRight || m_AxisX < -0f && m_IsFacingRight)
+            ChangeDirection();                       
     }
 
-    private void OnDrawGizmos() {
+    void FixedUpdate() {
+        m_IsGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);        
+        rb2d.velocity = new Vector2(m_AxisX * m_Speed, rb2d.velocity.y);                                 
+    }
+
+    public void OnDrawGizmos() {
         Gizmos.color = new Color(255, 0, 0, 1);
         Gizmos.DrawSphere(groundCheck.position, checkRadius);    
     }
-
-    void Update(){
-        if(m_IsGrounded && Input.GetButtonDown("Jump"))
-           rb.velocity = Vector2.up * m_JumpForce;
-    }
+#endregion
 }
