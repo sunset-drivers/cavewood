@@ -11,7 +11,7 @@ public class PlayerWorldMapScript : MonoBehaviour
     public string m_AnimatorXAxis = "xAxis";
     public string m_AnimatorYAxis = "yAxis";
 
-    public float m_speed = 5f;
+    public float m_Speed = 5f;
     private float m_xAxis;
     private float m_yAxis;
 
@@ -31,7 +31,11 @@ public class PlayerWorldMapScript : MonoBehaviour
     }
 
     private void FixedUpdate() 
-    {
-        rb.velocity = new Vector2(m_xAxis, m_yAxis) * m_speed;
+    {        
+        float _currentSpeed = m_Speed;
+        if(m_xAxis != 0.0f && m_yAxis != 0.0f)
+            _currentSpeed = m_Speed / 1.414f;
+
+        rb.velocity = new Vector2(m_xAxis, m_yAxis) * _currentSpeed;
     }
 }
