@@ -19,13 +19,12 @@ public class StateManager: MonoBehaviour
     private static StateManager _instance;
     public static StateManager Instance {get { return _instance; } }
     private void Awake() {
+        Debug.Log("State Started");
         if(_instance != null && _instance != this) {
             Destroy(this.gameObject);
         } else {
             _instance = this;
         }
-
-        DontDestroyOnLoad(gameObject);
     }
 
 #region Getters and Setters
@@ -85,14 +84,25 @@ public class StateManager: MonoBehaviour
 #endregion
 #region State Functions
     public void SaveState()
-    {        
-        State _ActualState = GetState();
-        string json = JsonUtility.ToJson(_ActualState);        
+    {
+        GameObject _Player = GameObject.FindGameObjectWithTag("Player");                   
+        State _CurrentState = GetState();
+        State _NewState = new State(){
+            SceneName = SceneManager.GetActiveScene().name,
+            DateTime = DateTime.Now.ToString(),
+            Party = _CurrentState.Party,
+            CompletedCaves = _CurrentState.CompletedCaves,
+            PlayerPosition = _Player.transform.position
+        };
+        SetState(_NewState);
+        string json = JsonUtility.ToJson(_NewState);        
+        Debug.Log(json);
         File.WriteAllText(Application.persistentDataPath + "save.json", json );
     }   
 
     public void LoadState()
     {
+        Debug.Log(Application.persistentDataPath + "save.json");
         State _State = JsonUtility.FromJson<State>(File.ReadAllText(Application.persistentDataPath + "save.json"));
         StateManager.Instance.SetState(_State);
         SceneManager.LoadScene(_State.SceneName);

@@ -11,6 +11,10 @@ public class GameStatus: MonoBehaviour
     [SerializeField] private State m_State; 
     [SerializeField] private GameObject m_Player;
 
+    private void Awake() {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void Start()
     {
         m_State = StateManager.Instance.GetState();    

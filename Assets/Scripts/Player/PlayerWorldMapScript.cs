@@ -27,7 +27,10 @@ public class PlayerWorldMapScript : MonoBehaviour
         m_yAxis = Input.GetAxisRaw("Vertical");
 
         animator.SetFloat(m_AnimatorXAxis, m_xAxis);
-        animator.SetFloat(m_AnimatorYAxis, m_yAxis);         
+        animator.SetFloat(m_AnimatorYAxis, m_yAxis);
+
+        if(Input.GetButtonDown("Inventory"))
+            InventoryController.Instance.OpenInventory();         
     }
 
     private void FixedUpdate() 

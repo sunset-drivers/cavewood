@@ -4,30 +4,38 @@ using UnityEngine;
 
 public class InventoryController : MonoBehaviour
 {
-    public List<SlotInventoryBehaviour> inventorySlots;
-    public static InventoryController instance;
+    public List<SlotInventoryBehaviour> inventorySlots;    
     public int maxInventorySlots;
-    public SlotInventoryBehaviour slotPrefab;
-    public Transform itemsGrid;
+    public SlotInventoryBehaviour slotPrefab;  
 
-    void Start()
+    [Header("UI Components")]  
+        public GameObject m_Inventory;
+        private GameObject m_BGFader;
+        private GameObject m_ItemGrid;
+
+    private static InventoryController _instance;
+    public static InventoryController Instance {get { return _instance; } }
+
+#region Behaviours
+    void Awake()
     {
-        instance = this;   
-        
+        if(_instance != null && _instance != this) {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }         
+
+        LoadUIComponents();
+
         for(int i=0; i<maxInventorySlots; i++)
         {
             GameObject tempSlot = Instantiate(slotPrefab.gameObject);
-            tempSlot.transform.SetParent(itemsGrid, false);
+            tempSlot.transform.SetParent(m_ItemGrid.transform, false);
             inventorySlots.Add(tempSlot.GetComponent<SlotInventoryBehaviour>());
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+#endregion
+#region Inventory Functions
     public void AddItemToInventory(Item item)
     {
         bool foundItem = false;
@@ -70,5 +78,22 @@ public class InventoryController : MonoBehaviour
         return slotToReturn;
     }
 
+    public void OpenInventory() {        
+        m_Inventory.SetActive(!m_Inventory.gameObject.activeInHierarchy);
+        Time.timeScale = m_Inventory.activeInHierarchy ? 0 : 1;
+    }
+#endregion
+#region Manager Functions
+    public void LoadUIComponents(){
+        m_Inventory = GameObject.Find("Inventory");
 
+        Transform _ItemGridTransform = m_Inventory.gameObject.transform.Find("ItemGrid");
+        m_ItemGrid = _ItemGridTransform.gameObject;        
+
+        Transform _BGFaderTransform = m_Inventory.gameObject.transform.Find("bgFader");
+        m_BGFader = _BGFaderTransform.gameObject;                
+        
+        m_Inventory.SetActive(false);
+    }
+#endregion
 }
