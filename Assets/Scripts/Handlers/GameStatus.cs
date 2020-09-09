@@ -12,7 +12,7 @@ public class GameStatus: MonoBehaviour
     [SerializeField] private GameObject m_Player;
 
     private void Awake() {
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);        
     }
 
     public void Start()

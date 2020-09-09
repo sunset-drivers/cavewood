@@ -8,7 +8,10 @@ public class OverworldEnemy: MonoBehaviour
         public float m_MaxSpeed = 8f;
         public float m_MaxForce = 5f;    
 
-    [Header("Start Seek Area")]
+    [Header("Wander")]
+        public Vector2 m_CircleDistance;
+
+    [Header("Seek")]
         public float m_SeekAreaRadius = 1f;        
 
     [Header("Components Variables")]
@@ -32,6 +35,20 @@ public class OverworldEnemy: MonoBehaviour
 
 #region Steering Behaviours
     #region Seek
+
+        private void DisplacementForce(){
+          //  Vector2 _Displacement;
+            //_Displacement = new Vector2(0.0f, -1.0f);
+            //_Displacement = Vector2.Scale(m_CircleDistance);
+            
+            //setAngle(displacement, wanderAngle);
+            //
+            // Change wanderAngle just a bit, so it
+            // won't have the same value in the
+            // next game frame.
+            //wanderAngle += (Math.random() * ANGLE_CHANGE) - (ANGLE_CHANGE * .5);
+        }
+
         private bool PlayerEnteredSeekArea(){
             Collider2D[] _CollidedWith = Physics2D.OverlapCircleAll(
                 transform.position, 
@@ -59,7 +76,11 @@ public class OverworldEnemy: MonoBehaviour
     #endregion
     #region Wander
         private void Wander(){
+       //     Vector2 _CircleCenter = rb2d.velocity;
+       //     _CircleCenter.Normalize();
+         //   _CircleCenter = Vector2.Scale(_CircleCenter, m_CircleDistance);
 
+            
         }
     #endregion
 #endregion 
