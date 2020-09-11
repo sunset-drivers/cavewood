@@ -1,33 +1,50 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryController : MonoBehaviour
 {
-    public List<SlotInventoryBehaviour> inventorySlots;
-    public static InventoryController instance;
+    public List<SlotInventoryBehaviour> inventorySlots;    
     public int maxInventorySlots;
-    public SlotInventoryBehaviour slotPrefab;
-    public Transform itemsGrid;
+    public SlotInventoryBehaviour slotPrefab;  
 
-    void Start()
+    [Header("UI Components")]  
+        public GameObject m_Inventory;
+        public GameObject m_BGFader;
+        public GameObject m_ItemGrid;
+
+    private static InventoryController _instance;
+    public static InventoryController Instance {get { return _instance; } }
+
+#region Behaviours
+    void Awake()
     {
-        instance = this;   
-        
+        if(_instance != null && _instance != this) {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }         
+
+        LoadUIComponents();
+
         for(int i=0; i<maxInventorySlots; i++)
         {
             GameObject tempSlot = Instantiate(slotPrefab.gameObject);
-            tempSlot.transform.SetParent(itemsGrid, false);
+            tempSlot.transform.SetParent(m_ItemGrid.transform, false);
             inventorySlots.Add(tempSlot.GetComponent<SlotInventoryBehaviour>());
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void Update(){
+        if(Input.GetButtonDown("Inventory"))
+            InventoryController.Instance.OpenInventory();  
 
+        // if(!m_Inventory)
+        //     LoadUIComponents();
+    }
+#endregion
+#region Inventory Functions
     public void AddItemToInventory(Item item)
     {
         bool foundItem = false;
@@ -70,5 +87,15 @@ public class InventoryController : MonoBehaviour
         return slotToReturn;
     }
 
-
+    public void OpenInventory() {                
+        // Time.timeScale = m_Inventory.activeInHierarchy ? 0 : 1;
+        m_BGFader.SetActive(!m_BGFader.activeInHierarchy);
+        m_ItemGrid.SetActive(!m_ItemGrid.activeInHierarchy);
+    }
+#endregion
+#region Manager Functions
+    public void LoadUIComponents(){
+        
+    }
+#endregion
 }

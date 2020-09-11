@@ -10,7 +10,7 @@ public class SlotInventoryBehaviour : MonoBehaviour
     public Text nameItem;
     public GameObject amountIndicator;
     public Text amountText;
-    // Start is called before the first frame update
+    
     void Start()
     {
         SetupSlot();
@@ -41,11 +41,6 @@ public class SlotInventoryBehaviour : MonoBehaviour
         amountIndicator.SetActive(isActive);
         nameItem.gameObject.SetActive(isActive);
         iconItemSlot.gameObject.SetActive(isActive);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void OnEnable()
