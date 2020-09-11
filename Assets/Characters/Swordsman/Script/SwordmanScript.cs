@@ -35,8 +35,7 @@ public class SwordmanScript : MonoBehaviour, ICharacter
         m_CollidedWith = Physics2D.OverlapCircleAll(_position, m_HitRadius, m_DamageableLayer);
 
         int _hitCount = m_CollidedWith.Length;        
-        for(int i = 0; i < _hitCount; i++){
-            Debug.Log(m_CollidedWith[i].gameObject.name);
+        for(int i = 0; i < _hitCount; i++){            
             var _enemy = m_CollidedWith[i].gameObject.GetComponent<IEnemy>();
             if(_enemy != null){
                 _enemy.TakeDamage(m_Damage);

@@ -35,8 +35,7 @@ public class PlayerPlatformScript : MonoBehaviour
 #endregion
 
 #region PlayerFunctions
-    private void Jump(){
-        //rb2d.velocity = Vector2.up * m_JumpForce; 
+    private void Jump(){        
         rb2d.AddForce(Vector2.up * m_JumpForce, ForceMode2D.Force);           
     }
 

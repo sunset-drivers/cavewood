@@ -34,7 +34,7 @@ public class Item : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            InventoryController.instance.AddItemToInventory(this);
+            InventoryController.Instance.AddItemToInventory(this);
         }
     }
 
