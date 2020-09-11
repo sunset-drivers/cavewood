@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryController : MonoBehaviour
 {
@@ -10,8 +11,8 @@ public class InventoryController : MonoBehaviour
 
     [Header("UI Components")]  
         public GameObject m_Inventory;
-        private GameObject m_BGFader;
-        private GameObject m_ItemGrid;
+        public GameObject m_BGFader;
+        public GameObject m_ItemGrid;
 
     private static InventoryController _instance;
     public static InventoryController Instance {get { return _instance; } }
@@ -33,6 +34,14 @@ public class InventoryController : MonoBehaviour
             tempSlot.transform.SetParent(m_ItemGrid.transform, false);
             inventorySlots.Add(tempSlot.GetComponent<SlotInventoryBehaviour>());
         }
+    }
+
+    void Update(){
+        if(Input.GetButtonDown("Inventory"))
+            InventoryController.Instance.OpenInventory();  
+
+        // if(!m_Inventory)
+        //     LoadUIComponents();
     }
 #endregion
 #region Inventory Functions
@@ -78,22 +87,15 @@ public class InventoryController : MonoBehaviour
         return slotToReturn;
     }
 
-    public void OpenInventory() {        
-        m_Inventory.SetActive(!m_Inventory.gameObject.activeInHierarchy);
-        Time.timeScale = m_Inventory.activeInHierarchy ? 0 : 1;
+    public void OpenInventory() {                
+        // Time.timeScale = m_Inventory.activeInHierarchy ? 0 : 1;
+        m_BGFader.SetActive(!m_BGFader.activeInHierarchy);
+        m_ItemGrid.SetActive(!m_ItemGrid.activeInHierarchy);
     }
 #endregion
 #region Manager Functions
     public void LoadUIComponents(){
-        m_Inventory = GameObject.Find("Inventory");
-
-        Transform _ItemGridTransform = m_Inventory.gameObject.transform.Find("ItemGrid");
-        m_ItemGrid = _ItemGridTransform.gameObject;        
-
-        Transform _BGFaderTransform = m_Inventory.gameObject.transform.Find("bgFader");
-        m_BGFader = _BGFaderTransform.gameObject;                
         
-        m_Inventory.SetActive(false);
     }
 #endregion
 }

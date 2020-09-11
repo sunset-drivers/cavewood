@@ -12,14 +12,18 @@ public class GameStatus: MonoBehaviour
     [SerializeField] private GameObject m_Player;
 
     private void Awake() {
+        m_State = StateManager.Instance.GetState();  
         DontDestroyOnLoad(gameObject);        
     }
 
-    public void Start()
-    {
-        m_State = StateManager.Instance.GetState();    
+    public void Update(){
+        if(!m_Player)
+            GetPlayer();
+    }
+
+    private void GetPlayer(){          
         m_Player = GameObject.Find("Player");
         m_Player.transform.position = m_State.PlayerPosition;
-    }    
+    }
 }
 

@@ -15,16 +15,18 @@ public class StateManager: MonoBehaviour
         public List<GameObject> m_Members;
         public int m_Morale;
         public int m_Money;
+        public List<SlotInventoryBehaviour> m_Inventory;
         public List<string> m_CompletedCaves;
     private static StateManager _instance;
     public static StateManager Instance {get { return _instance; } }
-    private void Awake() {
-        Debug.Log("State Started");
+    private void Awake() {        
         if(_instance != null && _instance != this) {
             Destroy(this.gameObject);
         } else {
             _instance = this;
         }
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
 #region Getters and Setters
@@ -60,6 +62,7 @@ public class StateManager: MonoBehaviour
         m_Members = _State.Party.Members;
         m_Morale = _State.Party.Morale;
         m_Money = _State.Party.Money;
+        m_Inventory = _State.Inventory;
         m_CompletedCaves = _State.CompletedCaves;
     }
 
@@ -78,6 +81,7 @@ public class StateManager: MonoBehaviour
             DateTime = DateTime.Now.ToString(),
             PlayerPosition = m_PlayerPosition,
             Party = _Party,
+            Inventory = m_Inventory,
             CompletedCaves = m_CompletedCaves
         };
     }    
@@ -91,12 +95,12 @@ public class StateManager: MonoBehaviour
             SceneName = SceneManager.GetActiveScene().name,
             DateTime = DateTime.Now.ToString(),
             Party = _CurrentState.Party,
-            CompletedCaves = _CurrentState.CompletedCaves,
-            PlayerPosition = _Player.transform.position
+            PlayerPosition = _Player.transform.position,
+            Inventory = _CurrentState.Inventory,
+            CompletedCaves = _CurrentState.CompletedCaves            
         };
         SetState(_NewState);
-        string json = JsonUtility.ToJson(_NewState);        
-        Debug.Log(json);
+        string json = JsonUtility.ToJson(_NewState);                
         File.WriteAllText(Application.persistentDataPath + "save.json", json );
     }   
 
