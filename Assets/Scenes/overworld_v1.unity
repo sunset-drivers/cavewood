@@ -148,12 +148,12 @@ PrefabInstance:
     - target: {fileID: 410163056341407164, guid: 6432a26d8bfcc5e4fa853e841b3f4c46,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -11.95
       objectReference: {fileID: 0}
     - target: {fileID: 410163056341407164, guid: 6432a26d8bfcc5e4fa853e841b3f4c46,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -8.69
       objectReference: {fileID: 0}
     - target: {fileID: 410163056341407164, guid: 6432a26d8bfcc5e4fa853e841b3f4c46,
         type: 3}
@@ -39823,6 +39823,36 @@ PrefabInstance:
       propertyPath: m_Player
       value: 
       objectReference: {fileID: 304666918}
+    - target: {fileID: 8070666248411739759, guid: 821452f0d7b4b1346864e7c0536f5b8c,
+        type: 3}
+      propertyPath: m_CircleDistance.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070666248411739759, guid: 821452f0d7b4b1346864e7c0536f5b8c,
+        type: 3}
+      propertyPath: m_CircleRadius.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070666248411739759, guid: 821452f0d7b4b1346864e7c0536f5b8c,
+        type: 3}
+      propertyPath: m_AngleChange
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070666248411739759, guid: 821452f0d7b4b1346864e7c0536f5b8c,
+        type: 3}
+      propertyPath: m_CircleRadius.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070666248411739759, guid: 821452f0d7b4b1346864e7c0536f5b8c,
+        type: 3}
+      propertyPath: m_CircleDistance.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8070666248411739759, guid: 821452f0d7b4b1346864e7c0536f5b8c,
+        type: 3}
+      propertyPath: m_MaxSpeed
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 821452f0d7b4b1346864e7c0536f5b8c, type: 3}
 --- !u!1001 &8512246321166681520

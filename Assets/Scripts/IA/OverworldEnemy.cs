@@ -10,6 +10,9 @@ public class OverworldEnemy: MonoBehaviour
 
     [Header("Wander")]
         public Vector2 m_CircleDistance;
+        public Vector2 m_CircleRadius;
+        public float m_AngleChange;
+        private float m_WanderAngle = 0.0f;
 
     [Header("Seek")]
         public float m_SeekAreaRadius = 1f;        
@@ -34,21 +37,14 @@ public class OverworldEnemy: MonoBehaviour
     }
 
 #region Steering Behaviours
-    #region Seek
-
-        private void DisplacementForce(){
-          //  Vector2 _Displacement;
-            //_Displacement = new Vector2(0.0f, -1.0f);
-            //_Displacement = Vector2.Scale(m_CircleDistance);
-            
-            //setAngle(displacement, wanderAngle);
-            //
-            // Change wanderAngle just a bit, so it
-            // won't have the same value in the
-            // next game frame.
-            //wanderAngle += (Math.random() * ANGLE_CHANGE) - (ANGLE_CHANGE * .5);
+    #region Steering
+        void Steer(Vector2 Force, float SpeedModifier = 1.0f){
+            Vector2 _Steering = Vector2.ClampMagnitude(Force, m_MaxForce);
+            _Steering = _Steering / rb2d.mass;
+            rb2d.velocity = Vector2.ClampMagnitude(rb2d.velocity + _Steering, m_MaxSpeed/SpeedModifier);
         }
-
+    #endregion
+    #region Seek
         private bool PlayerEnteredSeekArea(){
             Collider2D[] _CollidedWith = Physics2D.OverlapCircleAll(
                 transform.position, 
@@ -67,21 +63,32 @@ public class OverworldEnemy: MonoBehaviour
         private void Seek() {
             if(transform.position != m_Player.position){            
                 Vector2 _DesiredVelocity = Vector2ExtraMath.Normalize(m_Player.position - transform.position)  * m_MaxSpeed;            
-                Vector2 _Steering = _DesiredVelocity - rb2d.velocity;
-                _Steering = Vector2.ClampMagnitude(_Steering, m_MaxForce);
-                _Steering = _Steering / rb2d.mass;
-                rb2d.velocity = Vector2.ClampMagnitude(rb2d.velocity + _Steering, m_MaxSpeed);
+                Vector2 _Force = _DesiredVelocity - rb2d.velocity;
+                Steer(_Force);
             }
         }    
     #endregion
     #region Wander
-        private void Wander(){
-       //     Vector2 _CircleCenter = rb2d.velocity;
-       //     _CircleCenter.Normalize();
-         //   _CircleCenter = Vector2.Scale(_CircleCenter, m_CircleDistance);
-
-            
+        public Vector2 SetAngle(Vector2 vector, float value) {
+            float len = vector.magnitude;
+            vector.x = Mathf.Cos(value) * len;
+            vector.y = Mathf.Sin(value) * len;
+            return vector;
         }
+        private void Wander() {
+            Vector2 _CircleCenter = rb2d.velocity;
+            _CircleCenter.Normalize();
+            _CircleCenter = Vector2.Scale(_CircleCenter, m_CircleDistance);
+            
+            Vector2 _Displacement = new Vector2(0, -1);
+            _Displacement = Vector2.Scale(_Displacement, m_CircleRadius);
+            
+            _Displacement = SetAngle(_Displacement, m_WanderAngle);
+            m_WanderAngle += (Random.Range(0, 90) * m_AngleChange) - (m_AngleChange * .5f);
+
+            Vector2 m_WanderForce = _CircleCenter + _Displacement;
+            Steer(m_WanderForce, 4);
+        }       
     #endregion
 #endregion 
    
