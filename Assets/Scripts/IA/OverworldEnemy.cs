@@ -18,7 +18,7 @@ public class OverworldEnemy: MonoBehaviour
         public float m_SeekAreaRadius = 1f;        
 
     [Header("Components Variables")]
-        public Transform m_Player;
+        private Transform m_Player;
         private Rigidbody2D rb2d;
         private ChangeScene m_ChangeScene;
 
@@ -96,6 +96,7 @@ public class OverworldEnemy: MonoBehaviour
     private void Awake() {        
         rb2d = GetComponent<Rigidbody2D>();    
         m_ChangeScene = GetComponent<ChangeScene>();
+        m_Player = GameObject.Find("Player").GetComponent<Transform>();
     }
 
     void FixedUpdate()

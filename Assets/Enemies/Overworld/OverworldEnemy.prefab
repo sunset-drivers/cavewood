@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8070666248411739757}
   - component: {fileID: 8070666248411739756}
   - component: {fileID: 8070666248411739754}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: OverworldEnemy
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -99,9 +99,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d5f801c3c96de49bfab7406d34b3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 7.5
+  m_MaxSpeed: 6
   m_MaxForce: 0.5
-  m_CircleDistance: {x: 0, y: 0}
+  m_CircleDistance: {x: 0.5, y: 0.5}
+  m_CircleRadius: {x: 0.5, y: 0.5}
+  m_AngleChange: 2
   m_SeekAreaRadius: 7
   m_Player: {fileID: 0}
 --- !u!114 &8070666248411739757
