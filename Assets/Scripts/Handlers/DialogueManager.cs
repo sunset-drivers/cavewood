@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using Cavewood.Models;
 using Cavewood.Utils;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour, hasTrigger
 {     
     public DialogueBox DialogueBox;
     public float TextSpeed = 1f;
@@ -24,7 +24,7 @@ public class DialogueManager : MonoBehaviour
             if(DialogueBox.TextBox.text == m_ShowingMessage.Text) 
                DialogueBox.ContinueButton.SetActive(true);            
 
-            if(Input.GetButton("Fire1"))
+            if(Input.GetButton("Action"))
                 m_SpeedUp = 4;
             else 
                 m_SpeedUp = 1;
@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(string _EventName)
     {
+        //Time.timeScale = 0;
         m_DialogueStarted = true;
         DialogueBox.BackgroundPanel.SetActive(true);     
         m_Messages = GetDialogueMessages(_EventName);
@@ -80,6 +81,7 @@ public class DialogueManager : MonoBehaviour
 
     private void ClearDialogue()
     {
+        //Time.timeScale = 1;
         m_DialogueStarted = false;
         DialogueBox.TextBox.text = "";
         DialogueBox.LeftSpeakerImage.sprite = null;
@@ -104,5 +106,10 @@ public class DialogueManager : MonoBehaviour
             DialogueBox.TextBox.text += letter;
             yield return new WaitForSeconds(TextSpeed / m_SpeedUp);  
         }
+    }
+
+    public void Trigger(string EventName)
+    {
+        StartDialogue(EventName);
     }
 }

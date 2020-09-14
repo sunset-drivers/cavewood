@@ -15,21 +15,21 @@ public class TriggerEvent : MonoBehaviour
     public string EventName;
 
     private void OnTriggerEnter2D(Collider2D collider) {
-        if(EventType == EventTypes.OnTriggerEnter)
+        if(collider.gameObject.CompareTag("Player") && EventType == EventTypes.OnTriggerEnter)
             EventObject.GetComponent(EventScript)
             .GetComponent<hasTrigger>()
             .Trigger(EventName);
     }
 
     private void OnTriggerStay2D(Collider2D collider) {
-        if(EventType == EventTypes.OnTriggerStay)
+        if(collider.gameObject.CompareTag("Player") && EventType == EventTypes.OnTriggerStay)
             EventObject.GetComponent(EventScript)
             .GetComponent<hasTrigger>()
             .Trigger(EventName);
     }
 
     private void OnTriggerExit2D(Collider2D collider) {
-        if(EventType == EventTypes.OnTriggerExit)
+        if(collider.gameObject.CompareTag("Player") && EventType == EventTypes.OnTriggerExit)
             EventObject.GetComponent(EventScript)
             .GetComponent<hasTrigger>()
             .Trigger(EventName);
