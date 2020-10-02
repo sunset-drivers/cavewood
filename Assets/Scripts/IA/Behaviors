@@ -1,0 +1,91 @@
+public List<GameObject> m_Agents;
+
+    public Vector3 ComputeAlignment(GameObject myAgent)
+    {
+        Vector3 _Point = new Vector3();
+        int _NeighborCount = 0;
+        foreach (GameObject Agent in m_Agents)
+        {
+            if (Agent != myAgent)
+            {
+                if (Vector2.Distance(myAgent.transform.position, Agent.transform.position) < 300)
+                {
+                    _Point.x += Agent.GetComponent<Rigidbody2D>().velocity.x;
+                    _Point.y += Agent.GetComponent<Rigidbody2D>().velocity.y;
+                    _NeighborCount++;
+                }        
+            }
+        }
+        
+        if(_NeighborCount == 0) {
+            _Point = Vector3.zero;
+        } else {
+            _Point.x /= _NeighborCount;
+            _Point.y /= _NeighborCount;
+            _Point.Normalize();
+        }
+        
+
+        return _Point;
+    }
+
+    public Vector3 ComputeCohesion(GameObject myAgent)
+    {
+        Vector3 _Point = new Vector3();
+        int _NeighborCount = 0;
+        foreach (GameObject Agent in m_Agents)
+        {
+            if (Agent != myAgent)
+            {
+                if (Vector2.Distance(myAgent.transform.position, Agent.transform.position) < 300)
+                {
+                    _Point.x += Agent.transform.position.x;
+                    _Point.y += Agent.transform.position.y;
+                    _NeighborCount++;
+                }        
+            }
+        }
+        
+        if(_NeighborCount == 0) {
+            _Point = Vector3.zero;            
+        } else {
+            _Point.x /= _NeighborCount;
+            _Point.y /= _NeighborCount;
+            _Point = new Vector3(
+                _Point.x - myAgent.transform.position.x,
+                _Point.y - myAgent.transform.position.y,
+                _Point.z
+            );
+            _Point.Normalize();
+        }
+        
+        return _Point;
+    }
+
+    public Vector3 ComputeSeparation(GameObject myAgent)
+    {
+        Vector3 _Point = new Vector3();
+        int _NeighborCount = 0;
+        foreach (GameObject Agent in m_Agents)
+        {
+            if (Agent != myAgent)
+            {
+                if (Vector2.Distance(myAgent.transform.position, Agent.transform.position) < 300)
+                {
+                    _Point.x += Agent.transform.position.x - myAgent.transform.position.x;
+                    _Point.y += Agent.transform.position.y - myAgent.transform.position.y;
+                    _NeighborCount++;
+                }        
+            }
+        }
+        
+        if(_NeighborCount == 0) {
+            _Point = Vector3.zero;            
+        } else {
+            _Point.x = (_Point.x / _NeighborCount) * -1;
+            _Point.y = (_Point.y / _NeighborCount) * -1;            
+            _Point.Normalize();
+        }
+        
+        return _Point;
+    }
