@@ -21,8 +21,7 @@ public class SwordmanScript : MonoBehaviour, ICharacter
 
     [Header("Enemy Detect Variables")]        
         public LayerMask m_DamageableLayer;    
-        protected Collider2D[] m_CollidedWith;
-        protected ContactFilter2D contactFilter;
+        protected Collider2D[] m_CollidedWith;        
 
     public void Action() {          
         m_CanAttack = false;              
