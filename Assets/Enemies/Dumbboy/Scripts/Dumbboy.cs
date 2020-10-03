@@ -51,7 +51,7 @@ public class Dumbboy : MonoBehaviour, IEnemy
     }
 
     public void Die() {
-        Destroy(transform.parent.gameObject);
+        Destroy(gameObject);
     }
 
     public void Knockback(){    
