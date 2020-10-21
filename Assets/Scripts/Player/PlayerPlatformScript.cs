@@ -32,9 +32,32 @@ public class PlayerPlatformScript : MonoBehaviour
 
     [Header("State Variables")]        
         public bool m_IsFacingRight = true; 
+        public float m_MaxInvulnerableTime = 0.8f;
+        public float m_InvulnerableTime = 0.0f;
 #endregion
 
-#region PlayerFunctions
+#region Player Functions
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        GameObject _CollidedWith = other.gameObject;
+        if(other.gameObject.CompareTag("Enemy")){
+            Debug.Log("Colidiu");
+            float _EnemyPosition = _CollidedWith.transform.position.x;
+            TakeDamage(50, 15f, _EnemyPosition, 1f);
+        }
+    }
+
+    public void TakeDamage(int Damage, float KnockbackForce, float EnemyHorizontalPosition, float KnockbackHeight = 0.5f){
+        StartCoroutine("Invulnerable");
+        StateManager.Instance.LoseMorale(Damage);
+        Vector2 _KnocbackDirection = new Vector2(
+            (transform.position.x - EnemyHorizontalPosition) * KnockbackForce,
+            KnockbackHeight
+        );
+        Debug.Log("Direction: " + _KnocbackDirection);
+        rb2d.AddForce(_KnocbackDirection, ForceMode2D.Impulse);   
+    }
+
     private void Jump(){        
         rb2d.AddForce(Vector2.up * m_JumpForce, ForceMode2D.Force);           
     }
@@ -51,9 +74,13 @@ public class PlayerPlatformScript : MonoBehaviour
         Vector3 localscale = transform.localScale;
         transform.localScale = new Vector3(localscale.x * -1, localscale.y, localscale.z);
     }    
+
+    public bool IsInvulnerable(){
+        return m_InvulnerableTime > 0.0f;
+    }
 #endregion
 
-#region RuntimeEvents
+#region Runtime Events
     private void Awake() {
         animator = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
@@ -66,21 +93,39 @@ public class PlayerPlatformScript : MonoBehaviour
 
         SetAnimatorParameters(m_AxisX, m_AxisY);
 
-        if(m_IsGrounded && _Jumped)
-            Jump();        
 
-        if(m_AxisX > 0f && !m_IsFacingRight || m_AxisX < -0f && m_IsFacingRight)
-            ChangeDirection();                       
+        if(!IsInvulnerable()){         
+            if(m_IsGrounded && _Jumped)
+                Jump();        
+
+            if(m_AxisX > 0f && !m_IsFacingRight || m_AxisX < -0f && m_IsFacingRight)
+                ChangeDirection();                          
+        }
     }
 
     void FixedUpdate() {
         m_IsGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);        
-        rb2d.velocity = new Vector2(m_AxisX * m_Speed, rb2d.velocity.y);                                 
+        if(!IsInvulnerable()){    
+            rb2d.velocity = new Vector2(m_AxisX * m_Speed, rb2d.velocity.y);                                 
+        }
     }
 
     public void OnDrawGizmos() {
         Gizmos.color = new Color(255, 0, 0, 1);
         Gizmos.DrawSphere(groundCheck.position, checkRadius);    
     }
+#endregion
+
+#region Courotines
+    private IEnumerator Invulnerable(){
+        do {
+            m_InvulnerableTime += Time.deltaTime;
+            if(m_InvulnerableTime > m_MaxInvulnerableTime)
+                m_InvulnerableTime = m_MaxInvulnerableTime;
+            yield return null;
+        } while(m_InvulnerableTime < m_MaxInvulnerableTime);
+
+        m_InvulnerableTime = 0.0f;
+    }    
 #endregion
 }

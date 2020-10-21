@@ -7,7 +7,7 @@ public class Dumbboy : MonoBehaviour, IEnemy
 #region Variables
     [Header("Combat Variables")]          
         public float m_Life = 20f;
-        public float m_Damage;        
+        public int m_Damage = 100;        
         public float m_MaxAttackCountdown = 1.0f;
         private float m_AttackCountdown = 0.0f;  
         public float m_MaxStaggerTime = 0.5f;
@@ -23,7 +23,6 @@ public class Dumbboy : MonoBehaviour, IEnemy
         private Collider2D m_AttackRange;        
         private Rigidbody2D rb2d;            
 #endregion
-
     IEnumerator Knocked() {
         do {
             m_StaggerCountdown += Time.deltaTime;
@@ -35,19 +34,31 @@ public class Dumbboy : MonoBehaviour, IEnemy
     }
 
     IEnumerator Attacking() {
-        do {
+        do {                        
             m_AttackCountdown += Time.deltaTime;
             if(m_AttackCountdown > m_MaxAttackCountdown)
                 m_AttackCountdown = m_MaxAttackCountdown;                
             yield return null;
         } while(m_AttackCountdown < m_MaxAttackCountdown);
         m_AttackCountdown = 0.0f;
+
+        ContactFilter2D _Filter = new ContactFilter2D();
+        List<Collider2D> _CollidedWith = new List<Collider2D>();        
+        _Filter.SetLayerMask(m_PlayerLayerMask);        
+        int _PlayerWasDamaged = m_AttackRange.OverlapCollider(_Filter, _CollidedWith);                     
+        if(_PlayerWasDamaged > 0){
+            m_Player.GetComponent<PlayerPlatformScript>().TakeDamage(
+                m_Damage,
+                5.0f,
+                transform.position.x
+            );
+        }   
     }
 
     public void Attack() {                
         rb2d.velocity.Set(0.0f, rb2d.velocity.y);
         m_SpriteAnimator.SetTrigger("DidAttack");
-        StartCoroutine("Attacking");        
+        StartCoroutine("Attacking");                  
     }
 
     public void Die() {
@@ -84,9 +95,10 @@ public class Dumbboy : MonoBehaviour, IEnemy
         bool _CanAttack = (m_AttackCountdown == 0.0f && _CollidedCount > 0);    
         bool _CanMove = (m_StaggerCountdown == 0.0f);   
 
-        if(_CanAttack)
-            Attack();    
-        else if(_CanMove)             
+       // if(_CanAttack)
+            //Attack();    
+        //else if(_CanMove)        
+        if(_CanMove && !m_Player.GetComponent<PlayerPlatformScript>().IsInvulnerable())       
             Move(m_Player.transform);
     }
 

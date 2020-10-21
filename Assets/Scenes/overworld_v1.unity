@@ -39988,6 +39988,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3417982676196418932, guid: a55b01d2dec5d1e47af39ae1eb3ad8fb,
         type: 3}
+    - target: {fileID: 7424933089608839517, guid: 2a30ce0b7d63e684693b2903b855ef11,
+        type: 3}
+      propertyPath: m_Name
+      value: PlayerStatus
+      objectReference: {fileID: 0}
     - target: {fileID: 7726349175307735629, guid: 2a30ce0b7d63e684693b2903b855ef11,
         type: 3}
       propertyPath: m_Enabled
@@ -40138,6 +40143,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlayerPosition.x
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8512246320111642859, guid: 069680671ca423144bc9d4e2954d01e8,
+        type: 3}
+      propertyPath: m_Morale
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2677644641513143178, guid: 069680671ca423144bc9d4e2954d01e8, type: 3}

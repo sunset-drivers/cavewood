@@ -28,7 +28,6 @@ public class StateManager: MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
     }
-
 #region Getters and Setters
     public void SetInitialState(){
         List<GameObject> _Members = new List<GameObject>();    
@@ -85,6 +84,10 @@ public class StateManager: MonoBehaviour
             CompletedCaves = m_CompletedCaves
         };
     }    
+
+    public void LoseMorale(int lost_morale){
+        m_Morale -= lost_morale;
+    }
 #endregion
 #region State Functions
     public void SaveState()
