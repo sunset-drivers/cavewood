@@ -6,6 +6,7 @@ public class SpiderPatrol : BaseFSM
 {
     public Transform[] m_Waypoints;
     public int m_CurrentWaypoint; 
+    public float m_VisionDistance = 1.0f;
     private Animator m_Animator;   
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -24,6 +25,12 @@ public class SpiderPatrol : BaseFSM
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateUpdate(animator, stateInfo, layerIndex);  
+
+        Vector2 _RayCastDirection = m_Rigidybody.velocity.normalized;
+
+        Physics2D.Raycast(m_Body.transform.position, _RayCastDirection, m_VisionDistance);
+        Debug.DrawRay(m_Body.transform.position, _RayCastDirection, Color.red);        
+
         Patrol();      
     }
 
@@ -55,5 +62,9 @@ public class SpiderPatrol : BaseFSM
             _HorizontalDirection * m_Speed,
             m_Rigidybody.velocity.y
         );
+    }
+
+    private void OnDrawGizmos() {
+        
     }
 }
