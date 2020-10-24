@@ -5,8 +5,7 @@ using UnityEngine;
 public class SpiderPatrol : BaseFSM
 {
     public Transform[] m_Waypoints;
-    public int m_CurrentWaypoint; 
-    public float m_VisionDistance = 1.0f;
+    public int m_CurrentWaypoint;     
     private Animator m_Animator;   
 
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -26,11 +25,24 @@ public class SpiderPatrol : BaseFSM
     {
         base.OnStateUpdate(animator, stateInfo, layerIndex);  
 
-        Vector2 _RayCastDirection = m_Rigidybody.velocity.normalized;
+        if(m_CanFollowPlayer) {
+            Vector2 _RayCastDirection = (m_Body.transform.eulerAngles.y != 0) 
+            ? Vector2.right : Vector2.left; 
 
-        Physics2D.Raycast(m_Body.transform.position, _RayCastDirection, m_VisionDistance);
-        Debug.DrawRay(m_Body.transform.position, _RayCastDirection, Color.red);        
+            RaycastHit2D _hit = Physics2D.Raycast(
+                m_Body.transform.position, 
+                _RayCastDirection, 
+                m_VisionDistance,
+                m_PlayerLayer            
+            );
 
+            if(_hit.collider != null){
+                animator.SetTrigger("Prepare");
+            }      
+
+            Debug.DrawRay(m_Body.transform.position, _RayCastDirection, Color.red);    
+        }
+        
         Patrol();      
     }
 
@@ -62,9 +74,5 @@ public class SpiderPatrol : BaseFSM
             _HorizontalDirection * m_Speed,
             m_Rigidybody.velocity.y
         );
-    }
-
-    private void OnDrawGizmos() {
-        
     }
 }

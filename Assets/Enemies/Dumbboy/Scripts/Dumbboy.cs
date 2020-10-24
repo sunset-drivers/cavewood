@@ -14,16 +14,6 @@ public class Dumbboy : Enemy
         private Animator m_SpriteAnimator;   
         private Collider2D m_AttackRange;        
         private Rigidbody2D rb2d;
-
-    protected override void Attack()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected override void Move()
-    {
-        throw new System.NotImplementedException();
-    }
     #endregion
 
     private void Awake() {
@@ -34,6 +24,6 @@ public class Dumbboy : Enemy
     }    
 
     private void FixedUpdate() {                  
-        Move();
+        
     }
 }

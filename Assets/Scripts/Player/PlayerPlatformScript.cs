@@ -40,10 +40,10 @@ public class PlayerPlatformScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other) {
         GameObject _CollidedWith = other.gameObject;
-        if(other.gameObject.CompareTag("Enemy")){
-            Debug.Log("Colidiu");
+        if(other.gameObject.CompareTag("Enemy")) {       
+            Enemy _EnemyInfo = _CollidedWith.GetComponent<Enemy>();
             float _EnemyPosition = _CollidedWith.transform.position.x;
-            TakeDamage(50, 15f, _EnemyPosition, 1f);
+            TakeDamage(_EnemyInfo.m_Damage, 15f, _EnemyPosition, 1f);
         }
     }
 
@@ -53,8 +53,7 @@ public class PlayerPlatformScript : MonoBehaviour
         Vector2 _KnocbackDirection = new Vector2(
             (transform.position.x - EnemyHorizontalPosition) * KnockbackForce,
             KnockbackHeight
-        );
-        Debug.Log("Direction: " + _KnocbackDirection);
+        );        
         rb2d.AddForce(_KnocbackDirection, ForceMode2D.Impulse);   
     }
 
