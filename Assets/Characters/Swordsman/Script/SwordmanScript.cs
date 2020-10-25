@@ -13,7 +13,7 @@ public class SwordmanScript : MonoBehaviour, ICharacter
     [Header("Attack Variables")]
         private bool m_CanAttack = true;
         public AnimationClip m_AttackAnimation;
-        public float m_Damage = 10.0f;
+        public int m_Damage = 10;
         public float HitTime = 0.5f;
         public float m_HitRadius = 1f;
         public float m_HitHorizontalPosition = 0.2f;
@@ -35,8 +35,8 @@ public class SwordmanScript : MonoBehaviour, ICharacter
 
         int _hitCount = m_CollidedWith.Length;        
         for(int i = 0; i < _hitCount; i++){            
-            var _enemy = m_CollidedWith[i].gameObject.GetComponent<IEnemy>();
-            if(_enemy != null){
+            var _enemy = m_CollidedWith[i].gameObject.GetComponent<Enemy>();
+            if(_enemy != null && _enemy.m_CanTakeDamage){
                 _enemy.TakeDamage(m_Damage);
             }
             
@@ -56,7 +56,7 @@ public class SwordmanScript : MonoBehaviour, ICharacter
             Action();    
     }
 
-    void OnDrawGizmos() {        
+    void OnDrawGizmos() {
         Gizmos.color = new Color(255, 0, 0, 1);
         Vector3 _position = new Vector3(
             transform.position.x + (transform.localScale.x * m_HitHorizontalPosition),
