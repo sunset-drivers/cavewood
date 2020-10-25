@@ -16,12 +16,14 @@ public class SpiderPatrol : BaseFSM
         base.OnStateUpdate(animator, stateInfo, layerIndex);  
         CheckIfIsFacingRight();
 
-        if(m_EnemyScript.m_CanAttack && PlayerWasFound()) {
-            m_Animator.SetTrigger("Attack");   
-        } else {
-            CheckDirectionChange();        
-            Patrol();                
-        }          
+        if(m_EnemyScript.m_CanTakeDamage) {
+            if(m_EnemyScript.m_CanAttack && PlayerWasFound()) {
+                m_Animator.SetTrigger("Attack");   
+            } else {
+                CheckDirectionChange();        
+                Patrol();                
+            }          
+        }
     }
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

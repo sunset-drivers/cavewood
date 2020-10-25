@@ -36,7 +36,7 @@ public class SwordmanScript : MonoBehaviour, ICharacter
         int _hitCount = m_CollidedWith.Length;        
         for(int i = 0; i < _hitCount; i++){            
             var _enemy = m_CollidedWith[i].gameObject.GetComponent<Enemy>();
-            if(_enemy != null){
+            if(_enemy != null && _enemy.m_CanTakeDamage){
                 _enemy.TakeDamage(m_Damage);
             }
             
@@ -56,7 +56,7 @@ public class SwordmanScript : MonoBehaviour, ICharacter
             Action();    
     }
 
-    void OnDrawGizmos() {        
+    void OnDrawGizmos() {
         Gizmos.color = new Color(255, 0, 0, 1);
         Vector3 _position = new Vector3(
             transform.position.x + (transform.localScale.x * m_HitHorizontalPosition),

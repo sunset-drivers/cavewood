@@ -5,21 +5,54 @@ public class Enemy : MonoBehaviour
 {
     public int m_Life;
     public int m_Damage;         
+    public float m_KnockbackForce = 4f;
     public bool m_CanTakeDamage = true;
     public bool m_CanAttack = true;
     public float m_InvulnerabilityDuration = 0.3f;        
-    public float m_AttackCountdown = 3f;    
+    public float m_AttackCountdown = 3f;   
+    public GameObject m_RootEnemy;
+    private Rigidbody2D m_Rigidbody;
+    private GameObject m_Player;
 
-    IEnumerator Damaged() {
+    private void Awake() {
+        m_Rigidbody = GetComponent<Rigidbody2D>();
+        m_Player = GameObject.FindWithTag("Player");
+        m_RootEnemy = FindRootGameObject();
+    }
+
+    public IEnumerator Damaged() {
         m_CanTakeDamage = false;
         yield return new WaitForSeconds(m_InvulnerabilityDuration);
         m_CanTakeDamage = true;
     }
 
-    IEnumerator Attacked() {
+    public IEnumerator Attacked() {
         m_CanAttack = false;
         yield return new WaitForSeconds(m_AttackCountdown);
         m_CanAttack = true;
+    }
+
+    public GameObject FindRootGameObject(){
+        GameObject _result = this.gameObject;
+
+        while(true){
+            Transform _father = _result.transform.parent;
+            if(_father != null)
+                _result = _father.gameObject;
+            else            
+                break;
+        }
+
+        return _result;
+    }
+    
+    public void Knockback(){
+        Vector2 _Direction = (transform.position.x - m_Player.transform.position.x > 0) 
+        ? Vector2.right
+        : Vector2.left;
+
+        m_Rigidbody.velocity = Vector2.zero;
+        m_Rigidbody.AddForce(_Direction * m_KnockbackForce, ForceMode2D.Impulse);
     }
 
     public void TakeDamage(int Damage){
@@ -28,11 +61,12 @@ public class Enemy : MonoBehaviour
         if(m_Life <= 0){
             Die();
         } else {
-            StartCoroutine("Damaged");            
+            StartCoroutine("Damaged");  
+            Knockback();          
         }
     }       
 
     public void Die(){
-        Destroy(transform.parent.gameObject);
+        Destroy(m_RootEnemy);
     }
 }
