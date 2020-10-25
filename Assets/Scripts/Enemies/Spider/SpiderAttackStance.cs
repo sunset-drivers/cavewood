@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpiderAttackStance : BaseFSM
 {
-    public float m_JumpForce = 2f;
-    public float m_JumpDistance = 2f;   
+    public float m_JumpForce = 50f;
+    public float m_JumpDistance = 15f;   
     public bool m_IsOnTheGround = true; 
     private Rigidbody2D m_PlayerRigidbody;
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

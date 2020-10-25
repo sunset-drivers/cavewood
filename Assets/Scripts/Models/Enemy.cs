@@ -5,10 +5,10 @@ public class Enemy : MonoBehaviour
 {
     public int m_Life;
     public int m_Damage;         
-    public float m_KnockbackForce = 4f;
+    public float m_KnockbackForce = 5f;
     public bool m_CanTakeDamage = true;
     public bool m_CanAttack = true;
-    public float m_InvulnerabilityDuration = 0.3f;        
+    public float m_InvulnerabilityDuration = 0.15f;        
     public float m_AttackCountdown = 3f;   
     public GameObject m_RootEnemy;
     private Rigidbody2D m_Rigidbody;
