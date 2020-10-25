@@ -382,7 +382,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.5833333
   m_HasExitTime: 0
@@ -422,6 +422,7 @@ MonoBehaviour:
   m_LastWaypoint: 0
   m_JumpForce: 10
   m_JumpDistance: 10
+  m_IsOnTheGround: 1
 --- !u!1102 &6328531393382277423
 AnimatorState:
   serializedVersion: 5
@@ -468,7 +469,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.75409836
   m_HasExitTime: 0

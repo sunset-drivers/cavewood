@@ -559,7 +559,7 @@ GameObject:
   m_Component:
   - component: {fileID: 952547305}
   - component: {fileID: 952547306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6026,12 +6026,12 @@ PrefabInstance:
     - target: {fileID: 3554065308339812015, guid: d11695bd566af56478cbaae49ada4809,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.49
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3554065308339812015, guid: d11695bd566af56478cbaae49ada4809,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5327916465321214782, guid: d11695bd566af56478cbaae49ada4809,
         type: 3}
@@ -6198,9 +6198,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1083472318}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FieldBorders
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6408,7 +6408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1570278221}
   - component: {fileID: 1570278222}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
