@@ -32,8 +32,52 @@ public class PlayerPlatformScript : MonoBehaviour
 
     [Header("State Variables")]        
         public bool m_IsFacingRight = true; 
-        public float m_MaxInvulnerableTime = 0.8f;
-        public float m_InvulnerableTime = 0.0f;
+        public bool m_IsInvulnerable = false;
+        public float m_InvulnerabilityTime = 0.15f;        
+#endregion
+
+#region Coroutines
+    private IEnumerator Invulnerable(){        
+        m_IsInvulnerable = true;
+        yield return new WaitForSeconds(m_InvulnerabilityTime);
+        m_IsInvulnerable = false;
+    }    
+#endregion
+
+#region Runtime Events
+    private void Awake() {
+        animator = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();    
+    }
+
+    void Update(){
+        m_AxisX = Input.GetAxis("Horizontal");        
+        bool _Jumped = Input.GetButtonDown("Jump");                
+
+        SetAnimatorParameters(m_AxisX, m_AxisY);
+
+
+        if(!m_IsInvulnerable){         
+            if(m_IsGrounded && _Jumped)
+                Jump();        
+
+            if(m_AxisX > 0f && !m_IsFacingRight || m_AxisX < -0f && m_IsFacingRight)
+                ChangeDirection();                          
+        }
+    }
+
+    void FixedUpdate() {
+        m_IsGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);        
+        if(!m_IsInvulnerable){    
+            rb2d.velocity = new Vector2(m_AxisX * m_Speed, rb2d.velocity.y);                                 
+        }
+    }
+
+    public void OnDrawGizmos() {
+        Gizmos.color = new Color(255, 0, 0, 1);
+        Gizmos.DrawSphere(groundCheck.position, checkRadius);    
+    }
 #endregion
 
 #region Player Functions
@@ -43,18 +87,19 @@ public class PlayerPlatformScript : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy")) {       
             Enemy _EnemyInfo = _CollidedWith.GetComponent<Enemy>();
             float _EnemyPosition = _CollidedWith.transform.position.x;
-            TakeDamage(_EnemyInfo.m_Damage, 15f, _EnemyPosition, 1f);
+            TakeDamage(_EnemyInfo.m_Damage, 6f, _EnemyPosition, 1f);
         }
     }
 
     public void TakeDamage(int Damage, float KnockbackForce, float EnemyHorizontalPosition, float KnockbackHeight = 0.5f){
         StartCoroutine("Invulnerable");
         StateManager.Instance.LoseMorale(Damage);
-        Vector2 _KnocbackDirection = new Vector2(
-            (transform.position.x - EnemyHorizontalPosition) * KnockbackForce,
-            KnockbackHeight
-        );        
-        rb2d.AddForce(_KnocbackDirection, ForceMode2D.Impulse);   
+
+        Vector2 _Direction = (transform.position.x - EnemyHorizontalPosition > 0) 
+        ? Vector2.right
+        : Vector2.left;
+         
+        rb2d.AddForce(_Direction * KnockbackForce, ForceMode2D.Impulse);   
     }
 
     private void Jump(){        
@@ -73,58 +118,6 @@ public class PlayerPlatformScript : MonoBehaviour
         Vector3 localscale = transform.localScale;
         transform.localScale = new Vector3(localscale.x * -1, localscale.y, localscale.z);
     }    
-
-    public bool IsInvulnerable(){
-        return m_InvulnerableTime > 0.0f;
-    }
 #endregion
 
-#region Runtime Events
-    private void Awake() {
-        animator = GetComponent<Animator>();
-        rb2d = GetComponent<Rigidbody2D>();
-        sprite = GetComponent<SpriteRenderer>();    
-    }
-
-    void Update(){
-        m_AxisX = Input.GetAxis("Horizontal");        
-        bool _Jumped = Input.GetButtonDown("Jump");                
-
-        SetAnimatorParameters(m_AxisX, m_AxisY);
-
-
-        if(!IsInvulnerable()){         
-            if(m_IsGrounded && _Jumped)
-                Jump();        
-
-            if(m_AxisX > 0f && !m_IsFacingRight || m_AxisX < -0f && m_IsFacingRight)
-                ChangeDirection();                          
-        }
-    }
-
-    void FixedUpdate() {
-        m_IsGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);        
-        if(!IsInvulnerable()){    
-            rb2d.velocity = new Vector2(m_AxisX * m_Speed, rb2d.velocity.y);                                 
-        }
-    }
-
-    public void OnDrawGizmos() {
-        Gizmos.color = new Color(255, 0, 0, 1);
-        Gizmos.DrawSphere(groundCheck.position, checkRadius);    
-    }
-#endregion
-
-#region Courotines
-    private IEnumerator Invulnerable(){
-        do {
-            m_InvulnerableTime += Time.deltaTime;
-            if(m_InvulnerableTime > m_MaxInvulnerableTime)
-                m_InvulnerableTime = m_MaxInvulnerableTime;
-            yield return null;
-        } while(m_InvulnerableTime < m_MaxInvulnerableTime);
-
-        m_InvulnerableTime = 0.0f;
-    }    
-#endregion
 }
