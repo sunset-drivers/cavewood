@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MaggotCrawling : BaseFSM
 {
-    private Animator m_Animator;         
+    private Animator m_Animator; 
+    float m_VisionOriginPosition = 0.3f;        
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
@@ -56,11 +57,22 @@ public class MaggotCrawling : BaseFSM
     }
 
     public void CheckIfPlayerIsNear() {
-        Vector2 _RayCastDirection = (m_IsFacingRight) ? (Vector2.down + Vector2.left)  : (Vector2.down + Vector2.right); 
+        Vector2 _RayCastPosition;
+        if (!m_IsFacingRight) {
+            _RayCastPosition = new Vector2(
+                m_Body.transform.position.x + m_VisionOriginPosition,
+                m_Body.transform.position.y
+            );
+        } else {
+            _RayCastPosition = new Vector2(
+                m_Body.transform.position.x - m_VisionOriginPosition,
+                m_Body.transform.position.y
+            );
+        }                
 
         RaycastHit2D _hit = Physics2D.Raycast(
-            m_Body.transform.position, 
-            _RayCastDirection, 
+            _RayCastPosition, 
+            Vector2.down, 
             m_VisionDistance,
             m_PlayerLayer            
         );

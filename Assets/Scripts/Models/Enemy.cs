@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     public GameObject m_RootEnemy;
     private Rigidbody2D m_Rigidbody;
     private GameObject m_Player;
+    public float m_RayDistance = 0.5f;
 
     private void Awake() {
         m_Rigidbody = GetComponent<Rigidbody2D>();
@@ -69,4 +70,5 @@ public class Enemy : MonoBehaviour
     public void Die(){
         Destroy(m_RootEnemy);
     }
+
 }

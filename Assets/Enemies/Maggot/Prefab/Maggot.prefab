@@ -154,6 +154,7 @@ GameObject:
   - component: {fileID: 1431008143910750676}
   - component: {fileID: 8362281889636482362}
   - component: {fileID: 7896278079429885099}
+  - component: {fileID: 5650853419380225757}
   m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
@@ -214,6 +215,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5650853419380225757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413017946931536328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a15bbe2747b05f645bb4596e4d3935b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Life: 40
+  m_Damage: 30
+  m_KnockbackForce: 5
+  m_CanTakeDamage: 1
+  m_CanAttack: 1
+  m_InvulnerabilityDuration: 0.15
+  m_AttackCountdown: 3
+  m_RootEnemy: {fileID: 0}
+  m_RayDistance: 0.3
 --- !u!1 &6608993402727164175
 GameObject:
   m_ObjectHideFlags: 0
