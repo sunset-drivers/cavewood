@@ -21,6 +21,7 @@ public class PlayerPlatformScript : MonoBehaviour
         private float m_AxisX = 0.0f;
         private float m_AxisY = 0.0f;
         public float m_Speed = 5f;
+        public float m_KnockbackForce = 6f;
 
     [Header("Jump Variables")]
         private Vector2 m_JumpDirection;
@@ -30,17 +31,31 @@ public class PlayerPlatformScript : MonoBehaviour
         public string m_AnimatorAxisXName;
         public string m_AnimatorAxisYName;
 
+    [Header("Layers")]
+        public LayerMask m_PlayerLayer;
+        public LayerMask m_InvulnerableLayer;
+
     [Header("State Variables")]        
+        public bool m_WasDamaged = false;
+        public float m_KnockbackTime = 0.15f;
         public bool m_IsFacingRight = true; 
         public bool m_IsInvulnerable = false;
-        public float m_InvulnerabilityTime = 0.15f;        
+        public float m_InvulnerabilityTime = 1f;        
 #endregion
 
 #region Coroutines
-    private IEnumerator Invulnerable(){        
+    private IEnumerator Knockback(){           
+        m_WasDamaged = true;        
+        yield return new WaitForSeconds(m_KnockbackTime);        
+        m_WasDamaged = false;
+    }    
+
+    private IEnumerator Invulnerable(){           
+        this.gameObject.layer = LayerMask.NameToLayer("Invulnerable");     
         m_IsInvulnerable = true;
-        yield return new WaitForSeconds(m_InvulnerabilityTime);
-        m_IsInvulnerable = false;
+        yield return new WaitForSeconds(m_InvulnerabilityTime);        
+        this.gameObject.layer = LayerMask.NameToLayer("Player");
+        m_IsInvulnerable = false;        
     }    
 #endregion
 
@@ -57,8 +72,7 @@ public class PlayerPlatformScript : MonoBehaviour
 
         SetAnimatorParameters(m_AxisX, m_AxisY);
 
-
-        if(!m_IsInvulnerable){         
+        if(!m_WasDamaged){         
             if(m_IsGrounded && _Jumped)
                 Jump();        
 
@@ -69,15 +83,11 @@ public class PlayerPlatformScript : MonoBehaviour
 
     void FixedUpdate() {
         m_IsGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);        
-        if(!m_IsInvulnerable){    
+        if(!m_WasDamaged){    
             rb2d.velocity = new Vector2(m_AxisX * m_Speed, rb2d.velocity.y);                                 
         }
     }
-
-    public void OnDrawGizmos() {
-        Gizmos.color = new Color(255, 0, 0, 1);
-        Gizmos.DrawSphere(groundCheck.position, checkRadius);    
-    }
+    
 #endregion
 
 #region Player Functions
@@ -87,19 +97,21 @@ public class PlayerPlatformScript : MonoBehaviour
         if(other.gameObject.CompareTag("Enemy")) {       
             Enemy _EnemyInfo = _CollidedWith.GetComponent<Enemy>();
             float _EnemyPosition = _CollidedWith.transform.position.x;
-            TakeDamage(_EnemyInfo.m_Damage, 6f, _EnemyPosition, 1f);
+            TakeDamage(_EnemyInfo.m_Damage, _EnemyPosition, 1f);
         }
     }
 
-    public void TakeDamage(int Damage, float KnockbackForce, float EnemyHorizontalPosition, float KnockbackHeight = 0.5f){
+    public void TakeDamage(int Damage, float EnemyHorizontalPosition, float KnockbackHeight = 0.5f){
         StartCoroutine("Invulnerable");
+        StartCoroutine("Knockback");
+
         StateManager.Instance.LoseMorale(Damage);
 
         Vector2 _Direction = (transform.position.x - EnemyHorizontalPosition > 0) 
         ? Vector2.right
         : Vector2.left;
          
-        rb2d.AddForce(_Direction * KnockbackForce, ForceMode2D.Impulse);   
+        rb2d.AddForce(_Direction * m_KnockbackForce, ForceMode2D.Impulse);   
     }
 
     private void Jump(){        

@@ -43,8 +43,7 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -2593402814695487262}
-  m_StateMachineBehaviours:
-  - {fileID: 1333223504076959484}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -182,19 +181,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Attack
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Patrol
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -420,8 +419,8 @@ MonoBehaviour:
   m_Rigidybody: {fileID: 0}
   m_Player: {fileID: 0}
   m_LastWaypoint: 0
-  m_JumpForce: 10
-  m_JumpDistance: 10
+  m_JumpForce: 35
+  m_JumpDistance: 15
   m_IsOnTheGround: 1
 --- !u!1102 &6328531393382277423
 AnimatorState:
