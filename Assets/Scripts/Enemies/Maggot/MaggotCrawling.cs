@@ -13,7 +13,11 @@ public class MaggotCrawling : BaseFSM
 
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        base.OnStateUpdate(animator, stateInfo, layerIndex);
+        base.OnStateUpdate(animator, stateInfo, layerIndex);  
+        CheckIfIsFacingRight();
+        CheckDirectionChange();         
+        Patrol();    
+        CheckIfPlayerIsNear();
     }
 
     public void CheckDirectionChange(){
@@ -33,14 +37,42 @@ public class MaggotCrawling : BaseFSM
             m_GroundLayer
         );
 
-        if(_WallCheck.collider != null || _GroundCheck.collider == null) {            
-            m_Animator.SetTrigger("Idle");            
+        if(_WallCheck.collider != null || _GroundCheck.collider == null) {                        
+            if(m_IsFacingRight){
+                m_Body.transform.eulerAngles = new Vector3(
+                    m_Body.transform.eulerAngles.x, 
+                    0f, 
+                    m_Body.transform.eulerAngles.z
+                );
+            } else {
+                m_Body.transform.eulerAngles = new Vector3(
+                    m_Body.transform.eulerAngles.x, 
+                    180f, 
+                    m_Body.transform.eulerAngles.z
+                );
+            }                   
         }
 
     }
 
+    public void CheckIfPlayerIsNear() {
+        Vector2 _RayCastDirection = (m_IsFacingRight) ? (Vector2.down + Vector2.left)  : (Vector2.down + Vector2.right); 
+
+        RaycastHit2D _hit = Physics2D.Raycast(
+            m_Body.transform.position, 
+            _RayCastDirection, 
+            m_VisionDistance,
+            m_PlayerLayer            
+        );
+
+        if(_hit.collider != null){
+            m_Rigidybody.gravityScale = 1f;
+            m_Animator.SetTrigger("Struggle");
+        }
+    }
+
     public void Patrol() {   
-        float _HorizontalDirection = (m_IsFacingRight) ? 1f : -1f;      
+        float _HorizontalDirection = (m_IsFacingRight) ? -1f : 1f;      
         
         m_Rigidybody.velocity = new Vector2(
             _HorizontalDirection * m_Speed,

@@ -63,19 +63,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8e89199dd4f0b48a226d06c43dc48b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 0
-  m_Accuracy: 0
-  m_VisionDistance: 1
+  m_Speed: 0.3
+  m_Accuracy: 1
+  m_VisionDistance: 10
   m_IsFacingRight: 0
   m_WallChecker: {fileID: 0}
   m_GroundChecker: {fileID: 0}
   m_EnemyScript: {fileID: 0}
   m_PlayerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_GroundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_Brain: {fileID: 0}
   m_Body: {fileID: 0}
   m_Rigidybody: {fileID: 0}
@@ -120,7 +120,7 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
