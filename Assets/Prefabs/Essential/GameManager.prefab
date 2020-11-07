@@ -47,6 +47,7 @@ MonoBehaviour:
   m_DateTime: 
   m_PlayerPosition: {x: 0, y: 0, z: 0}
   m_Members: []
-  m_Morale: 0
+  m_Morale: 1000
   m_Money: 0
+  m_Inventory: []
   m_CompletedCaves: []
