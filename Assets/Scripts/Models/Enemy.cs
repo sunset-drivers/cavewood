@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour 
 {
+    public Transform m_GizmoSensorChecker;
     public int m_Life;
     public int m_Damage;         
     public float m_KnockbackForce = 5f;
@@ -69,6 +70,11 @@ public class Enemy : MonoBehaviour
 
     public void Die(){
         Destroy(m_RootEnemy);
+    }
+
+    private void OnDrawGizmos() {
+        if(m_GizmoSensorChecker != null)
+        Gizmos.DrawWireSphere(m_GizmoSensorChecker.position, 0.1f);
     }
 
 }

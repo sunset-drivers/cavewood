@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &770743804075119392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7396455108221816773}
+  m_Layer: 9
+  m_Name: StruggleChecker
+  m_TagString: Enemy
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7396455108221816773
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770743804075119392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1855003481374938392}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &852274248569764142
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,7 +42,7 @@ GameObject:
   - component: {fileID: 3120853292169059334}
   m_Layer: 9
   m_Name: Sprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,7 +154,7 @@ GameObject:
   - component: {fileID: 5549800617274724001}
   m_Layer: 9
   m_Name: WallChecker
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +187,7 @@ GameObject:
   - component: {fileID: 5650853419380225757}
   m_Layer: 9
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15bbe2747b05f645bb4596e4d3935b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GizmoSensorChecker: {fileID: 0}
   m_Life: 40
   m_Damage: 30
   m_KnockbackForce: 5
@@ -247,7 +278,7 @@ GameObject:
   - component: {fileID: 8590461961645200415}
   m_Layer: 9
   m_Name: GroundChecker
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,7 +309,7 @@ GameObject:
   - component: {fileID: 4713155756767615578}
   m_Layer: 9
   m_Name: Brain
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -328,7 +359,7 @@ GameObject:
   - component: {fileID: 1855003481374938392}
   m_Layer: 9
   m_Name: Sensors
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -346,6 +377,7 @@ Transform:
   m_Children:
   - {fileID: 5549800617274724001}
   - {fileID: 8590461961645200415}
+  - {fileID: 7396455108221816773}
   m_Father: {fileID: 1431008143910750676}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
