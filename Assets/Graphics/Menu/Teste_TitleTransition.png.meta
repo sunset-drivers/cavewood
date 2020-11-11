@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 25440fa1d0b9b8942a31cb11a9bbeb67
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7257070356165592333
+    second: Teste_TitleTransition_0
+  - first:
+      213: -5239242139659571962
+    second: Teste_TitleTransition_1
+  - first:
+      213: 2847691105019466721
+    second: Teste_TitleTransition_2
+  - first:
+      213: 4601645913374502716
+    second: Teste_TitleTransition_3
+  - first:
+      213: 4699516483575158700
+    second: Teste_TitleTransition_4
+  - first:
+      213: 897697330470913430
+    second: Teste_TitleTransition_5
+  - first:
+      213: -308737769577210627
+    second: Teste_TitleTransition_6
+  - first:
+      213: 2663348281342783602
+    second: Teste_TitleTransition_7
+  - first:
+      213: 5947214201433001068
+    second: Teste_TitleTransition_8
+  - first:
+      213: -3984040953558351238
+    second: Teste_TitleTransition_9
+  - first:
+      213: -3094973190448262496
+    second: Teste_TitleTransition_10
+  - first:
+      213: 3723791115772167942
+    second: Teste_TitleTransition_11
+  - first:
+      213: -3206039795532424140
+    second: Teste_TitleTransition_12
+  - first:
+      213: 6158245429671188669
+    second: Teste_TitleTransition_13
+  - first:
+      213: -5971844276553445201
+    second: Teste_TitleTransition_14
+  - first:
+      213: -3264643089392282900
+    second: Teste_TitleTransition_15
+  - first:
+      213: -4832183234193308915
+    second: Teste_TitleTransition_16
+  - first:
+      213: 180320538128171029
+    second: Teste_TitleTransition_17
+  - first:
+      213: 3413997476679594459
+    second: Teste_TitleTransition_18
+  - first:
+      213: 4979592643817191202
+    second: Teste_TitleTransition_19
+  - first:
+      213: 7908231434820845116
+    second: Teste_TitleTransition_20
+  - first:
+      213: 4040792322270891336
+    second: Teste_TitleTransition_21
+  - first:
+      213: 7854477115000842921
+    second: Teste_TitleTransition_22
+  - first:
+      213: 2304194264659949800
+    second: Teste_TitleTransition_23
+  - first:
+      213: 1743469915013746355
+    second: Teste_TitleTransition_24
+  - first:
+      213: 3200468145467908654
+    second: Teste_TitleTransition_25
+  - first:
+      213: 514847764404858099
+    second: Teste_TitleTransition_26
+  - first:
+      213: 4367806534625547092
+    second: Teste_TitleTransition_27
+  - first:
+      213: 1276452883698353326
+    second: Teste_TitleTransition_28
+  - first:
+      213: -5251297407678994630
+    second: Teste_TitleTransition_29
+  - first:
+      213: -2467005795559290734
+    second: Teste_TitleTransition_30
+  - first:
+      213: 4970425185060241365
+    second: Teste_TitleTransition_31
+  - first:
+      213: 3759282596412565753
+    second: Teste_TitleTransition_32
+  - first:
+      213: -8472684182619432883
+    second: Teste_TitleTransition_33
+  - first:
+      213: 2426428429687004303
+    second: Teste_TitleTransition_0
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Teste_TitleTransition_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d655d58097a47b0800000000000000
+      internalID: -5239242139659571962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_2
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e399b8e8f7058720800000000000000
+      internalID: 2847691105019466721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_3
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3fa0d0e3945cdf30800000000000000
+      internalID: 4601645913374502716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_4
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7179bb759083140800000000000000
+      internalID: 4699516483575158700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_5
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695098247f2457c00800000000000000
+      internalID: 897697330470913430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_6
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc9a9362a427bbf0800000000000000
+      internalID: -308737769577210627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_7
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270759e962d16f420800000000000000
+      internalID: 2663348281342783602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_8
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c82977ecfb88250800000000000000
+      internalID: 5947214201433001068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_9
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72cb807cd7d5b8c0800000000000000
+      internalID: -3984040953558351238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_10
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a259f9f7427c05d0800000000000000
+      internalID: -3094973190448262496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_11
+      rect:
+        serializedVersion: 2
+        x: 2002
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6070b515a409da330800000000000000
+      internalID: 3723791115772167942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_12
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c1683dacbd183d0800000000000000
+      internalID: -3206039795532424140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_13
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8593b279b767550800000000000000
+      internalID: 6158245429671188669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_14
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0151a454fbf1da0800000000000000
+      internalID: -5971844276553445201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_15
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2d6523868a1b2d0800000000000000
+      internalID: -3264643089392282900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_16
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d034f4453f2a0fcb0800000000000000
+      internalID: -4832183234193308915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_17
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51046d4f290a08200800000000000000
+      internalID: 180320538128171029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_18
+      rect:
+        serializedVersion: 2
+        x: 3276
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd1319ded94f06f20800000000000000
+      internalID: 3413997476679594459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_19
+      rect:
+        serializedVersion: 2
+        x: 3458
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2273fd460211b1540800000000000000
+      internalID: 4979592643817191202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_20
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ef212279eafbd60800000000000000
+      internalID: 7908231434820845116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_21
+      rect:
+        serializedVersion: 2
+        x: 3822
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d05144537c31830800000000000000
+      internalID: 4040792322270891336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_22
+      rect:
+        serializedVersion: 2
+        x: 4004
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa6f004255b00d60800000000000000
+      internalID: 7854477115000842921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_23
+      rect:
+        serializedVersion: 2
+        x: 4186
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e87c8eb9742aff10800000000000000
+      internalID: 2304194264659949800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_24
+      rect:
+        serializedVersion: 2
+        x: 4368
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be89f086ac023810800000000000000
+      internalID: 1743469915013746355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_25
+      rect:
+        serializedVersion: 2
+        x: 4550
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22619d42d85a6c20800000000000000
+      internalID: 3200468145467908654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_26
+      rect:
+        serializedVersion: 2
+        x: 4732
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc61ce505b152700800000000000000
+      internalID: 514847764404858099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_27
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4535cffc6e09d9c30800000000000000
+      internalID: 4367806534625547092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_28
+      rect:
+        serializedVersion: 2
+        x: 5096
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea40d51822fd6b110800000000000000
+      internalID: 1276452883698353326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_29
+      rect:
+        serializedVersion: 2
+        x: 5278
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a372d5d84d4af17b0800000000000000
+      internalID: -5251297407678994630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_30
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298cbd8bc4f63cdd0800000000000000
+      internalID: -2467005795559290734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_31
+      rect:
+        serializedVersion: 2
+        x: 5642
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfbb221f5f7af440800000000000000
+      internalID: 4970425185060241365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_32
+      rect:
+        serializedVersion: 2
+        x: 5824
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8aa799a97ab2430800000000000000
+      internalID: 3759282596412565753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_33
+      rect:
+        serializedVersion: 2
+        x: 6006
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48d5e840aafa6a80800000000000000
+      internalID: -8472684182619432883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Teste_TitleTransition_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 182
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa7bbee5f4b94b90800000000000000
+      internalID: -7257070356165592333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
