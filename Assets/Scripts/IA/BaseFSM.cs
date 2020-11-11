@@ -9,6 +9,7 @@ public class BaseFSM : StateMachineBehaviour
     public float m_Accuracy;
     public float m_VisionDistance = 1.0f;     
     public bool m_IsFacingRight;
+    public Transform m_Sensors;
     public Transform m_WallChecker;
     public Transform m_GroundChecker;  
     public Enemy m_EnemyScript;
@@ -25,10 +26,12 @@ public class BaseFSM : StateMachineBehaviour
         m_Brain = animator.gameObject;        
         m_Body = m_Brain.transform.Find("Body").gameObject;
         m_EnemyScript = m_Body.GetComponent<Enemy>();
-        m_Rigidybody = m_Body.GetComponent<Rigidbody2D>();
+        m_Rigidybody = m_Body.GetComponent<Rigidbody2D>();        
+        m_Sensors = m_Body.transform.Find("Sensors");
+        m_WallChecker = m_Sensors.Find("WallChecker");
+        m_GroundChecker = m_Sensors.Find("GroundChecker");
         m_Player = GameObject.FindGameObjectWithTag("Player");
-        m_WallChecker = m_Body.transform.Find("Sensors").Find("WallChecker");
-        m_GroundChecker = m_Body.transform.Find("Sensors").Find("GroundChecker");
+        
         CheckIfIsFacingRight();
     }
 

@@ -15,6 +15,11 @@ public class PlayerStatus : MonoBehaviour
     
     void Awake()
     {    
+        if(StateManager.Instance == null) {
+            Debug.LogError("O GameManager não foi encontrado, adicione-o a cena.");
+            return;
+        }
+
         m_MoneyBackground = transform.Find("bgMoney").gameObject;
         m_MoneyText = m_MoneyBackground.transform.Find("txtMoney").GetComponent<Text>();
 
@@ -24,7 +29,9 @@ public class PlayerStatus : MonoBehaviour
     
     void Update()
     {
-        m_MoraleText.text = StateManager.Instance.m_Morale.ToString();  
-        m_MoneyText.text = StateManager.Instance.m_Money.ToString();  
+        if(StateManager.Instance != null) {             
+            m_MoraleText.text = StateManager.Instance.m_Morale.ToString();  
+            m_MoneyText.text = StateManager.Instance.m_Money.ToString();  
+        }
     }
 }
