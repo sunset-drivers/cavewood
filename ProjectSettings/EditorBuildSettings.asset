@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/OverworldEncounters/OE001.unity
-    guid: 4a9d4dc0c0d5d134ebeb408391c2223a
+    path: Assets/Scenes/preMenu.unity
+    guid: 9af449b0e3026f94da6d6588853d0372
+  - enabled: 1
+    path: Assets/Scenes/mainMenu.unity
+    guid: f0eeff5ae7818bc4691ce4e3ce13a62e
   - enabled: 1
     path: Assets/Scenes/overworld_v1.unity
     guid: 2cbd3fc2591a64c4cab69489e861bc92
+  - enabled: 1
+    path: Assets/Scenes/OverworldEncounters/OE001.unity
+    guid: 4a9d4dc0c0d5d134ebeb408391c2223a
   m_configObjects: {}

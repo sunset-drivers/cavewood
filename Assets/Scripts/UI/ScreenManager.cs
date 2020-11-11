@@ -24,10 +24,19 @@ public class ScreenManager : MonoBehaviour
 
     [Header("Loading")]
     public GameObject m_LoadingPanel;
-    public float m_DelayAfterLaoding = 2.0f;
+    public float m_DelayAfterLoading = 2.0f;
 
     public void LoadLevel(string nextSceneName)
     {
+        // if(nextSceneName == "") {
+        //     Debug.LogError("O nome da cena de destino não foi informado."); 
+        //     return;
+        // } 
+        // else if(!SceneManager.GetSceneByName(nextSceneName).IsValid()) {
+        //     Debug.LogError("A cena de destino informada não existe ou não pode ser encontrada."); 
+        //     return;
+        // }
+
         StartCoroutine(ChangeScene(nextSceneName, false));
     }
 
@@ -38,10 +47,6 @@ public class ScreenManager : MonoBehaviour
 
     private IEnumerator ChangeScene(string nextSceneName, bool loading)
     {
-        List<BehaviorUI> list = Helper.FindAll<BehaviorUI>();
-        foreach (BehaviorUI ui in list)
-            ui.Disable();
-
         m_Fader.Show();
         yield return new WaitForSeconds(m_Fader.m_Time);
 
@@ -51,31 +56,13 @@ public class ScreenManager : MonoBehaviour
         }
         else
         {
-            if (loading)
-            {
-                m_LoadingPanel.SetActive(true);
-
-                m_Fader.Hide();
-                yield return new WaitForSeconds(m_Fader.m_Time);
-            }
-
             AsyncOperation asyncScene = SceneManager.LoadSceneAsync(nextSceneName);
             asyncScene.allowSceneActivation = false;
 
             while (!asyncScene.isDone)
             {
                 if (asyncScene.progress >= 0.9f)
-                {
-                    if (loading)
-                    {
-                        yield return new WaitForSeconds(m_DelayAfterLaoding);
-
-                        m_Fader.Show();
-                        yield return new WaitForSeconds(m_Fader.m_Time);
-
-                        m_LoadingPanel.SetActive(false);
-                    }
-
+                {               
                     asyncScene.allowSceneActivation = true;
                 }
 
