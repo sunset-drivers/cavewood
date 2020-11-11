@@ -223,6 +223,7 @@ MonoBehaviour:
   m_Accuracy: 0
   m_VisionDistance: 1
   m_IsFacingRight: 0
+  m_Sensors: {fileID: 0}
   m_WallChecker: {fileID: 0}
   m_GroundChecker: {fileID: 0}
   m_EnemyScript: {fileID: 0}
@@ -296,6 +297,7 @@ MonoBehaviour:
   m_Accuracy: 0.1
   m_VisionDistance: 1
   m_IsFacingRight: 0
+  m_Sensors: {fileID: 0}
   m_WallChecker: {fileID: 0}
   m_GroundChecker: {fileID: 0}
   m_EnemyScript: {fileID: 0}
@@ -405,6 +407,7 @@ MonoBehaviour:
   m_Accuracy: 0
   m_VisionDistance: 1
   m_IsFacingRight: 0
+  m_Sensors: {fileID: 0}
   m_WallChecker: {fileID: 0}
   m_GroundChecker: {fileID: 0}
   m_EnemyScript: {fileID: 0}
@@ -419,8 +422,8 @@ MonoBehaviour:
   m_Rigidybody: {fileID: 0}
   m_Player: {fileID: 0}
   m_LastWaypoint: 0
-  m_JumpForce: 35
-  m_JumpDistance: 15
+  m_JumpForce: 15
+  m_JumpDistance: 7
   m_IsOnTheGround: 1
 --- !u!1102 &6328531393382277423
 AnimatorState:
