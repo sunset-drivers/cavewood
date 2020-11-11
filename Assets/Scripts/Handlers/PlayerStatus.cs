@@ -14,24 +14,22 @@ public class PlayerStatus : MonoBehaviour
     public Text m_MoneyText;
     
     void Awake()
-    {    
-        if(StateManager.Instance == null) {
-            Debug.LogError("O GameManager não foi encontrado, adicione-o a cena.");
-            return;
-        }
-
+    {            
         m_MoneyBackground = transform.Find("bgMoney").gameObject;
         m_MoneyText = m_MoneyBackground.transform.Find("txtMoney").GetComponent<Text>();
 
         m_MoraleBackground = transform.Find("bgMorale").gameObject;
-        m_MoraleText = m_MoraleBackground.transform.Find("txtMorale").GetComponent<Text>();
+        m_MoraleText = m_MoraleBackground.transform.Find("txtMorale").GetComponent<Text>();        
     }
     
     void Update()
     {
-        if(StateManager.Instance != null) {             
+        if(StateManager.Instance == null) {
+            Debug.LogError("O GameManager não foi encontrado, adicione-o a cena.");
+            return;
+        } else {
             m_MoraleText.text = StateManager.Instance.m_Morale.ToString();  
             m_MoneyText.text = StateManager.Instance.m_Money.ToString();  
-        }
+        }                    
     }
 }
