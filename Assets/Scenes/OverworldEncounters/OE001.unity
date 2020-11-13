@@ -932,12 +932,12 @@ PrefabInstance:
     - target: {fileID: 1372972026875408041, guid: 1f9796c5b48b3d54387cc7e738f9a4ef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.9043665
+      value: -6.905941
       objectReference: {fileID: 0}
     - target: {fileID: 1372972026875408041, guid: 1f9796c5b48b3d54387cc7e738f9a4ef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3411938
+      value: 0.34119666
       objectReference: {fileID: 0}
     - target: {fileID: 1372972026875408041, guid: 1f9796c5b48b3d54387cc7e738f9a4ef,
         type: 3}
@@ -5460,16 +5460,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7485141982389122486, guid: 8aa6504e908ad6e45a042f79c6f72f68,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7485141982389122489, guid: 8aa6504e908ad6e45a042f79c6f72f68,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7485141982571181664, guid: 8aa6504e908ad6e45a042f79c6f72f68,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5529,26 +5519,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7485141982571181695, guid: 8aa6504e908ad6e45a042f79c6f72f68,
-        type: 3}
-      propertyPath: m_PlayerLayer.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 7485141982571181695, guid: 8aa6504e908ad6e45a042f79c6f72f68,
-        type: 3}
-      propertyPath: m_InvulnerableLayer.m_Bits
-      value: 2048
-      objectReference: {fileID: 0}
-    - target: {fileID: 7485141982571181695, guid: 8aa6504e908ad6e45a042f79c6f72f68,
-        type: 3}
-      propertyPath: m_KnockbackForce
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7485141982571181695, guid: 8aa6504e908ad6e45a042f79c6f72f68,
-        type: 3}
-      propertyPath: m_InvulnerabilityTime
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8aa6504e908ad6e45a042f79c6f72f68, type: 3}
@@ -11840,7 +11810,7 @@ GameObject:
   m_Layer: 0
   m_Name: EncounterManager
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11875,10 +11845,10 @@ MonoBehaviour:
     EnemiesInGroup:
     - Enemy: {fileID: 7130998726552501062, guid: d11695bd566af56478cbaae49ada4809,
         type: 3}
-      Position: {x: 0.5523883, y: 0.5147178, z: 0}
+      Position: {x: -6.12, y: 1.18, z: 0}
     - Enemy: {fileID: 7130998726552501062, guid: d11695bd566af56478cbaae49ada4809,
         type: 3}
-      Position: {x: 2.04, y: 0.26, z: 0}
+      Position: {x: -3, y: 0.6, z: 0}
     - Enemy: {fileID: 7130998726552501062, guid: d11695bd566af56478cbaae49ada4809,
         type: 3}
       Position: {x: 3.49, y: 0.26, z: 0}

@@ -50,7 +50,6 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -6596876709742732258, guid: b182b8e8ccff3a84abb805368043aff1,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -105,7 +104,6 @@ MonoBehaviour:
   m_CircleRadius: {x: 0.5, y: 0.5}
   m_AngleChange: 2
   m_SeekAreaRadius: 7
-  m_Player: {fileID: 0}
 --- !u!114 &8070666248411739757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,11 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca1cca73f4077f4a8c2e5b1ad64469a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UseTouch: 0
-  m_UseTimeToChangeScene: 0
-  m_Time: 0.5
   m_SceneName: OE001
-  m_Clip: {fileID: 0}
   m_Used: 0
 --- !u!50 &8070666248411739756
 Rigidbody2D:

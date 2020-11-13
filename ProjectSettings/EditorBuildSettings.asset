@@ -12,9 +12,54 @@ EditorBuildSettings:
     path: Assets/Scenes/mainMenu.unity
     guid: f0eeff5ae7818bc4691ce4e3ce13a62e
   - enabled: 1
+    path: Assets/Scenes/credits.unity
+    guid: f1b3201d09655474db80a8d88304c5c9
+  - enabled: 1
     path: Assets/Scenes/overworld_v2.unity
     guid: 13801ff7cf312a84988f614e0ed1029a
   - enabled: 1
     path: Assets/Scenes/OverworldEncounters/OE001.unity
     guid: 4a9d4dc0c0d5d134ebeb408391c2223a
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/00-Entrance.unity
+    guid: 1050c5b215cd0e040bd7c2f8b1c99d92
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/01-ThePit.unity
+    guid: 895f281948615e84e906afe3a4f16052
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/02-Openspace.unity
+    guid: 2e4408c0745171442bbf64ce47930bf0
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/04-DownHill.unity
+    guid: 50330c567ab4cf048897ae83cd8a6050
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/05-DownRock.unity
+    guid: aaa0a8c0aff99544d86f54ea845db35b
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/06-SquareRoom.unity
+    guid: 48edd6715a46fd941b0b2bb5215db132
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/07-SmallCorridor.unity
+    guid: 7142cf21675f50e4bace62c2ae9daaaa
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/08-RightAracEntrance.unity
+    guid: db5d49f21aa91494d840a999bcc66df2
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/09-CacconRoom.unity
+    guid: 2d8b31d7f2651004aa91ea89714587b3
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/10-LeftAracEntrance.unity
+    guid: c3b5d39b9f0d9444497c8994194e00f2
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/11-AracnaLair.unity
+    guid: e13e1bfe1fe6fd3489147bfb68f932de
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/12-AracnasDeepCore.unity
+    guid: 4415c61eec1e7854f92be943d0223f02
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/13-BossAracnaRoom.unity
+    guid: 31c8febc179095947af3a9576f9fa691
+  - enabled: 1
+    path: Assets/Scenes/CaveForest/14-Post_AracBoss_Room.unity
+    guid: d37f3fe497d7ca548b9789d8993778d4
   m_configObjects: {}
