@@ -39,6 +39,12 @@ public class StateManager: MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             Application.Quit();
+
+        if(m_Morale <= 0)
+        {
+            ScreenManager.Instance.LoadLevel("gameover");
+            Destroy(gameObject);
+        }                        
     }
 
     #region Getters and Setters

@@ -488,9 +488,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ca1cca73f4077f4a8c2e5b1ad64469a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NextSceneName: 
+  m_NextSceneName: mainMenu
   m_NextSceneSpawnPoint: 
-  m_UseSpawnPoints: 1
+  m_UseSpawnPoints: 0
 --- !u!4 &860825322
 Transform:
   m_ObjectHideFlags: 0
