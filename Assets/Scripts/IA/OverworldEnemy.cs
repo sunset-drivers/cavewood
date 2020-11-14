@@ -22,15 +22,15 @@ public class OverworldEnemy: MonoBehaviour
         private Rigidbody2D rb2d;
         private ChangeScene m_ChangeScene;
 
-
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.CompareTag("Player")){
             State _CurrentState = StateManager.Instance.GetState();                
             _CurrentState.SceneName = SceneManager.GetActiveScene().name;            
             _CurrentState.PlayerPosition = other.gameObject.transform.position;
+            _CurrentState.WasFacingRight = true;
             StateManager.Instance.SetState(_CurrentState);
 
-            m_ChangeScene.LoadLevel(m_ChangeScene.m_SceneName);
+            m_ChangeScene.LoadLevel(m_ChangeScene.m_NextSceneName);
             gameObject.SetActive(false);
         }
             

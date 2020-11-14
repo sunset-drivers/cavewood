@@ -13,6 +13,9 @@ namespace Cavewood.Models
         [SerializeField] public Vector3 PlayerPosition;
         [SerializeField] public Party Party;
         [SerializeField] public List<SlotInventoryBehaviour> Inventory;
-        [SerializeField] public List<string> CompletedCaves;
+        [SerializeField] public List<string> CompletedCaves;        
+        [SerializeField] public bool WasFacingRight;
+        [SerializeField] public SpawnPoint NextSceneSpawnPoint;
+        [SerializeField] public SpawnPoint LastSceneSpawnPoint;
     }
 }
