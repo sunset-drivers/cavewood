@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CaveForest/02-Openspace.unity
     guid: 2e4408c0745171442bbf64ce47930bf0
   - enabled: 1
+    path: Assets/Scenes/CaveForest/03-DownCube.unity
+    guid: 498b28a230716e6438811d553c00c6ab
+  - enabled: 1
     path: Assets/Scenes/CaveForest/04-DownHill.unity
     guid: 50330c567ab4cf048897ae83cd8a6050
   - enabled: 1

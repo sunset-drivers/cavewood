@@ -813,12 +813,12 @@ PrefabInstance:
     - target: {fileID: 1372972026875408041, guid: 1f9796c5b48b3d54387cc7e738f9a4ef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.9071836
+      value: -6.8667173
       objectReference: {fileID: 0}
     - target: {fileID: 1372972026875408041, guid: 1f9796c5b48b3d54387cc7e738f9a4ef,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.3411994
+      value: 0.3364613
       objectReference: {fileID: 0}
     - target: {fileID: 1372972026875408041, guid: 1f9796c5b48b3d54387cc7e738f9a4ef,
         type: 3}
@@ -11772,6 +11772,7 @@ MonoBehaviour:
         type: 3}
       Position: {x: -2, y: 0.51, z: 0}
   TimerCanvas: {fileID: 694524339}
+  m_FinishedEncounter: 0
 --- !u!114 &1348772907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12144,10 +12145,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -7.5694003, y: 4.179865}
+    - - {x: -7.5366883, y: -0.26906443}
       - {x: -7.5877857, y: -5.2852073}
       - {x: 6.183771, y: -5.1626253}
-      - {x: 6.1645947, y: 4.3183074}
+      - {x: 6.1645947, y: -0.22876024}
 --- !u!1 &1686544952
 GameObject:
   m_ObjectHideFlags: 0
