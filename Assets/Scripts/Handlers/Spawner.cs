@@ -33,7 +33,8 @@ public class Spawner : MonoBehaviour
         return _RandomPosition;
     }
 
-    private IEnumerator SpawnPrefabs(){        
+    private IEnumerator SpawnPrefabs(){
+        yield return new WaitForSeconds(3);
         foreach(SpawnableObject obj in m_Spawnables){            
             int i = 0;
             do {

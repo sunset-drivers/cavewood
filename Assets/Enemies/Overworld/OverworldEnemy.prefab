@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d5f801c3c96de49bfab7406d34b3c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MaxSpeed: 6
+  m_MaxSpeed: 3
   m_MaxForce: 0.5
   m_CircleDistance: {x: 0.5, y: 0.5}
   m_CircleRadius: {x: 0.5, y: 0.5}
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NextSceneName: OE001
   m_NextSceneSpawnPoint: 
+  m_UseSpawnPoints: 1
 --- !u!50 &8070666248411739756
 Rigidbody2D:
   serializedVersion: 4
