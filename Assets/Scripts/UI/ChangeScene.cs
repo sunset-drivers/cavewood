@@ -23,7 +23,10 @@ public class ChangeScene : MonoBehaviour
             State _CurrentState = StateManager.Instance.GetState();
             _CurrentState.SceneName = m_NextSceneName;
             _CurrentState.NextSceneSpawnPoint = _NextSpawnPoint;
-            _CurrentState.WasFacingRight = _Player.GetComponent<PlayerPlatformScript>().m_IsFacingRight;
+            _CurrentState.WasFacingRight = (_Player.GetComponent<PlayerPlatformScript>() != null)
+            ? _Player.GetComponent<PlayerPlatformScript>().m_IsFacingRight
+            : true;
+
             StateManager.Instance.SetState(_CurrentState);
             LoadLevel(m_NextSceneName);                     
         }

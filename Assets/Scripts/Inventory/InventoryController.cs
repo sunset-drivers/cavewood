@@ -1,101 +1,59 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryController : MonoBehaviour
+public class InventoryController : SlotInventoryBehaviour
 {
-    public List<SlotInventoryBehaviour> inventorySlots;    
-    public int maxInventorySlots;
-    public SlotInventoryBehaviour slotPrefab;  
+    public List<InventorySlot> inventorySlots = new List<InventorySlot>();
 
-    [Header("UI Components")]  
-        public GameObject m_Inventory;
-        public GameObject m_BGFader;
-        public GameObject m_ItemGrid;
+    [System.Serializable]
+    public class InventorySlot{
+        public Item currentItem;
+        public int m_amount;
 
-    private static InventoryController _instance;
-    public static InventoryController Instance {get { return _instance; } }
-
-#region Behaviours
-    void Awake()
-    {
-        if(_instance != null && _instance != this) {
-            Destroy(this.gameObject);
-        } else {
-            _instance = this;
-        }         
-
-        LoadUIComponents();
-
-        for(int i=0; i<maxInventorySlots; i++)
+        public InventorySlot(Item item, int amount)
         {
-            GameObject tempSlot = Instantiate(slotPrefab.gameObject);
-            tempSlot.transform.SetParent(m_ItemGrid.transform, false);
-            inventorySlots.Add(tempSlot.GetComponent<SlotInventoryBehaviour>());
+            this.currentItem = item;
+            this.m_amount = amount;
         }
     }
 
-    void Update(){
-        if(Input.GetButtonDown("Inventory"))
-            InventoryController.Instance.OpenInventory();  
-
-        // if(!m_Inventory)
-        //     LoadUIComponents();
-    }
-#endregion
-#region Inventory Functions
-    public void AddItemToInventory(Item item)
+    public void AddItem(Item item, int amount, Action OnItemAdded)
     {
-        bool foundItem = false;
-        SlotInventoryBehaviour emptySlot = nextEmptySlot();
-        if (item.isStackable)
+        foreach(var slot in inventorySlots)
         {
-            foreach(SlotInventoryBehaviour slot in inventorySlots)
+            if (slot.currentItem.nameItem == item.nameItem)
             {
-                if(slot.currentItem != null && slot.currentItem.nameItem == item.nameItem)
-                {
-                    slot.currentItem.AddItem();
-                    foundItem = true;
-                }
-            }
-
-            if (!foundItem && emptySlot != null) 
-            {
-                emptySlot.currentItem = item;
+                slot.currentItem.AddItem(amount);
+                SetupSlot(item);
+                OnItemAdded.Invoke();
+                return;
             }
         }
-        else if(emptySlot != null)
-        {
-            emptySlot.currentItem = item;
-        }
-        item.gameObject.SetActive(false);
-    }
-    
 
-    private SlotInventoryBehaviour nextEmptySlot()
+        inventorySlots.Add(new InventorySlot(item, amount));
+        SetupSlot(item);
+        OnItemAdded.Invoke();
+    }
+    public void SetupSlot(Item currentItem)
     {
-        SlotInventoryBehaviour slotToReturn = null;
-        foreach(SlotInventoryBehaviour slot in inventorySlots)
+        if (currentItem != null)
         {
-            if (slot.currentItem == null)
-            {
-                slotToReturn = slot;
-                break;
-            }
-        }
-        return slotToReturn;
-    }
+            SetActiveSlot(true);
+            iconItemSlot.sprite = currentItem.icon;
+            nameItem.text = currentItem.nameItem;
 
-    public void OpenInventory() {                
-        // Time.timeScale = m_Inventory.activeInHierarchy ? 0 : 1;
-        m_BGFader.SetActive(!m_BGFader.activeInHierarchy);
-        m_ItemGrid.SetActive(!m_ItemGrid.activeInHierarchy);
+            if (currentItem.isStackable)
+                amountText.text = currentItem.GetAmount().ToString();
+            else
+                amountIndicator.SetActive(false);
+        }
+        else
+        {
+            SetActiveSlot(false);
+        }
+
     }
-#endregion
-#region Manager Functions
-    public void LoadUIComponents(){
-        
-    }
-#endregion
 }
