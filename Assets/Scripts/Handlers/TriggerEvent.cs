@@ -6,13 +6,21 @@ public class TriggerEvent : MonoBehaviour
     {
         OnTriggerEnter, 
         OnTriggerStay, 
-        OnTriggerExit
+        OnTriggerExit,
+        OnStart
     };
 
     public GameObject EventObject;
     public string EventScript;
     public EventTypes EventType;    
     public string EventName;
+
+    private void Start() {
+        if(EventType == EventTypes.OnStart)
+            EventObject.GetComponent(EventScript)
+            .GetComponent<hasTrigger>()
+            .Trigger(EventName);
+    }
 
     private void OnTriggerEnter2D(Collider2D collider) {
         if(collider.gameObject.CompareTag("Player") && EventType == EventTypes.OnTriggerEnter)
