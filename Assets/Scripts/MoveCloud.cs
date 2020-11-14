@@ -18,7 +18,7 @@ public class MoveCloud : MonoBehaviour
         startposition = gameObject.transform.position.x;
         camWidth = 150f;
 
-        speed = Random.Range(minSpeed, maxSpeed);
+        speed = 0.5f;
         transform.position = new Vector3(-camWidth - buffer, Random.Range(minY, maxY), transform.position.z);
     }
 
