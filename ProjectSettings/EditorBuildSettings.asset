@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/credits.unity
     guid: f1b3201d09655474db80a8d88304c5c9
   - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: 620162e64f1a64c449d39c39b0c1432a
+  - enabled: 1
     path: Assets/Scenes/overworld_v2.unity
     guid: 13801ff7cf312a84988f614e0ed1029a
   - enabled: 1
