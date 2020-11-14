@@ -36,16 +36,16 @@ public class EncounterManager : MonoBehaviour
 
     public IEnumerator StartChangeSceneTimer(){
         m_FinishedEncounter = true;
-        TimerCanvas.SetActive(true);
-        float _PastSeconds = 5.0f;
+        //TimerCanvas.SetActive(true);
+        float _PastSeconds = 3.0f;
         do {
             _PastSeconds -= Time.deltaTime;
             if(_PastSeconds < 0.0f) _PastSeconds = 0.0f;
-            TimerText.text = Mathf.RoundToInt(_PastSeconds).ToString();
+            //TimerText.text = Mathf.RoundToInt(_PastSeconds).ToString();
             yield return null;
         } while(_PastSeconds > 0.0f);
     
-        TimerCanvas.SetActive(false);
+       // TimerCanvas.SetActive(false);
         m_ChangeScene.LoadLevel(m_ChangeScene.m_NextSceneName);
     }
 }

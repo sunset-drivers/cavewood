@@ -5,22 +5,19 @@ public class ChangeScene : MonoBehaviour
 {    
     public string m_NextSceneName;    
     public string m_NextSceneSpawnPoint;
-    public bool m_UseSpawnPoints = true;    
-
-    private void Awake()
-    {        
-        if(m_UseSpawnPoints)
-            if (string.IsNullOrEmpty(m_NextSceneSpawnPoint))
-                Debug.LogError("Necessário especificar a posição de destino do player para a próxima cena");
-
-        if (string.IsNullOrEmpty(m_NextSceneName))
-            Debug.LogError("Necessário especificar a cena de destino do player.");
-    }
+    public bool m_UseSpawnPoints = true;        
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
-        {            
+        {
+            if (m_UseSpawnPoints)
+                if (string.IsNullOrEmpty(m_NextSceneSpawnPoint))
+                    Debug.LogError("Necessário especificar a posição de destino do player para a próxima cena");
+
+            if (string.IsNullOrEmpty(m_NextSceneName))
+                Debug.LogError("Necessário especificar a cena de destino do player.");
+
             SpawnPoint _NextSpawnPoint = new SpawnPoint(m_NextSceneName, m_NextSceneSpawnPoint);
             GameObject _Player = collision.gameObject;
             State _CurrentState = StateManager.Instance.GetState();
