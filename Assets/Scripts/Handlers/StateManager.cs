@@ -35,6 +35,12 @@ public class StateManager: MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+    }
+
     #region Getters and Setters
     public void SetInitialState(){
         List<GameObject> _Members = new List<GameObject>();    
