@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/OverworldEncounters/OE001.unity
     guid: 4a9d4dc0c0d5d134ebeb408391c2223a
   - enabled: 1
+    path: Assets/Scenes/gameover.unity
+    guid: 142e5e56e87d08e40a24d033d6bb0967
+  - enabled: 1
     path: Assets/Scenes/CaveForest/00-Entrance.unity
     guid: 1050c5b215cd0e040bd7c2f8b1c99d92
   - enabled: 1
