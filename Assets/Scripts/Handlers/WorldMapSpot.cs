@@ -19,7 +19,7 @@ public class WorldMapSpot : MonoBehaviour
     void Update()
     {        
         if(m_CanChangeScene && Input.GetButtonDown("Fire1"))
-            m_ChangeScene.LoadLevel(m_ChangeScene.m_SceneName);
+            m_ChangeScene.LoadLevel(m_ChangeScene.m_NextSceneName);
     }
 
     private void OnCollisionEnter2D(Collision2D other) 

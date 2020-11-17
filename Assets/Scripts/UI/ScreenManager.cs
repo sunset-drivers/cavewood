@@ -9,14 +9,12 @@ public class ScreenManager : MonoBehaviour
 
     public void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else if (Instance != this)
-        {
-            Destroy(gameObject);
-        }
+        if (Instance == null)        
+            Instance = this;        
+        else if (Instance != this)        
+            Destroy(gameObject);        
+
+        DontDestroyOnLoad(this.gameObject);
     }
 
     [Header("Transition")]
@@ -28,15 +26,6 @@ public class ScreenManager : MonoBehaviour
 
     public void LoadLevel(string nextSceneName)
     {
-        // if(nextSceneName == "") {
-        //     Debug.LogError("O nome da cena de destino não foi informado."); 
-        //     return;
-        // } 
-        // else if(!SceneManager.GetSceneByName(nextSceneName).IsValid()) {
-        //     Debug.LogError("A cena de destino informada não existe ou não pode ser encontrada."); 
-        //     return;
-        // }
-
         StartCoroutine(ChangeScene(nextSceneName, false));
     }
 
@@ -68,6 +57,8 @@ public class ScreenManager : MonoBehaviour
 
                 yield return null;
             }
+
+            m_Fader.Hide();
         }
     }
 

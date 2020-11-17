@@ -125,7 +125,7 @@ public class PlayerPlatformScript : MonoBehaviour
             animator.SetFloat(m_AnimatorAxisYName, yAxisValue);
     }
 
-    private void ChangeDirection() {
+    public void ChangeDirection() {
         m_IsFacingRight = !m_IsFacingRight; 
         Vector3 localscale = transform.localScale;
         transform.localScale = new Vector3(localscale.x * -1, localscale.y, localscale.z);

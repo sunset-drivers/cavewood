@@ -32,9 +32,16 @@ public class Item : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Entrei Aqui");
         if (collision.gameObject.CompareTag("Player"))
         {
-            InventoryController.Instance.AddItemToInventory(this);
+            Debug.Log("Oi");
+            var inventoryController = collision.gameObject.GetComponent<InventoryController>();
+            Debug.Log(inventoryController);
+            if (inventoryController != null)
+            {
+                inventoryController.AddItem(this, 1, () => { Destroy(gameObject); });
+            }
         }
     }
 

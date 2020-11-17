@@ -232,7 +232,7 @@ PrefabInstance:
     - target: {fileID: 8853833672062788460, guid: 65f000c3635dfae4ca8d5096dfc10294,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65f000c3635dfae4ca8d5096dfc10294, type: 3}
@@ -585,10 +585,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2644464201242345659}
     m_Modifications:
+    - target: {fileID: 1876734085144649144, guid: 1c6204eb7b848764d9a6aca1d9f42f85,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3724692572335666485, guid: 1c6204eb7b848764d9a6aca1d9f42f85,
         type: 3}
       propertyPath: m_Name
-      value: PlayerInfo
+      value: PlayerStatus
       objectReference: {fileID: 0}
     - target: {fileID: 6996108195873839458, guid: 1c6204eb7b848764d9a6aca1d9f42f85,
         type: 3}

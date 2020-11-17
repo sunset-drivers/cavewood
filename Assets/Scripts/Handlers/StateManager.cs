@@ -9,14 +9,20 @@ using Cavewood.Models;
 public class StateManager: MonoBehaviour
 {    
     [Header("State Info")]
-        public string m_ActualSceneName;
-        public string m_DateTime;
-        public Vector3 m_PlayerPosition;
-        public List<GameObject> m_Members;
-        public int m_Morale;
-        public int m_Money;
-        public List<SlotInventoryBehaviour> m_Inventory;
-        public List<string> m_CompletedCaves;
+    public string m_ActualSceneName;
+    public string m_DateTime;    
+    public List<GameObject> m_Members;
+    public int m_Morale;
+    public int m_Money;
+    public List<SlotInventoryBehaviour> m_Inventory;
+    public List<string> m_CompletedCaves;
+
+    [Header("Player Info")]
+    public SpawnPoint m_NextSceneSpawnPoint;
+    public bool m_WasFacingRight;
+    public Vector3 m_PlayerPosition;
+    public Quaternion m_PlayerRotation;
+
     private static StateManager _instance;
     public static StateManager Instance {get { return _instance; } }
     private void Awake() {        
@@ -28,7 +34,20 @@ public class StateManager: MonoBehaviour
 
         DontDestroyOnLoad(this.gameObject);
     }
-#region Getters and Setters
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            Application.Quit();
+
+        if(m_Morale <= 0)
+        {
+            ScreenManager.Instance.LoadLevel("gameover");
+            Destroy(gameObject);
+        }                        
+    }
+
+    #region Getters and Setters
     public void SetInitialState(){
         List<GameObject> _Members = new List<GameObject>();    
         //Quando houver o personagem principal, adicionar o .Add() dele no grupo.
@@ -63,6 +82,8 @@ public class StateManager: MonoBehaviour
         m_Money = _State.Party.Money;
         m_Inventory = _State.Inventory;
         m_CompletedCaves = _State.CompletedCaves;
+        m_WasFacingRight = _State.WasFacingRight;
+        m_NextSceneSpawnPoint = _State.NextSceneSpawnPoint;
     }
 
     public State GetState()
@@ -75,21 +96,30 @@ public class StateManager: MonoBehaviour
         
         Scene _Scene = SceneManager.GetActiveScene();
 
-        return new State() {            
-            SceneName = _Scene.name,            
+        //SpawnPoint _NextSceneSpawnPoint = new SpawnPoint()
+        //{
+        //    m_Scene = _Scene.name,
+        //    m_PointName = m_NextSceneSpawnPoint
+        //};
+
+        return new State() {
+            SceneName = _Scene.name,
             DateTime = DateTime.Now.ToString(),
             PlayerPosition = m_PlayerPosition,
             Party = _Party,
             Inventory = m_Inventory,
-            CompletedCaves = m_CompletedCaves
+            CompletedCaves = m_CompletedCaves,
+            NextSceneSpawnPoint = m_NextSceneSpawnPoint,
+            WasFacingRight = m_WasFacingRight
         };
     }    
 
     public void LoseMorale(int lost_morale){
         m_Morale -= lost_morale;
     }
-#endregion
-#region State Functions
+    #endregion
+
+    #region State Functions
     public void SaveState()
     {
         GameObject _Player = GameObject.FindGameObjectWithTag("Player");                   
@@ -114,5 +144,5 @@ public class StateManager: MonoBehaviour
         StateManager.Instance.SetState(_State);
         SceneManager.LoadScene(_State.SceneName);
     }
-#endregion
+    #endregion
 }

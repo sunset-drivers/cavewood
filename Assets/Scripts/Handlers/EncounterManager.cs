@@ -10,7 +10,7 @@ public class EncounterManager : MonoBehaviour
     private ChangeScene m_ChangeScene;
     private Text TimerText;
     public GameObject TimerCanvas;
-
+    public bool m_FinishedEncounter = false;
     private void Awake() {
         m_ChangeScene = GetComponent<ChangeScene>();
         TimerText = TimerCanvas.GetComponentInChildren<Text>();
@@ -28,22 +28,24 @@ public class EncounterManager : MonoBehaviour
     
     private void Update(){
         GameObject[] _Enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if(_Enemies.Length == 0){
+        if(_Enemies.Length == 0 && !m_FinishedEncounter)
+        {
             StartCoroutine("StartChangeSceneTimer");
         }
     }
 
     public IEnumerator StartChangeSceneTimer(){
-        TimerCanvas.SetActive(true);
-        float _PastSeconds = 5.0f;
+        m_FinishedEncounter = true;
+        //TimerCanvas.SetActive(true);
+        float _PastSeconds = 3.0f;
         do {
             _PastSeconds -= Time.deltaTime;
             if(_PastSeconds < 0.0f) _PastSeconds = 0.0f;
-            TimerText.text = Mathf.RoundToInt(_PastSeconds).ToString();
+            //TimerText.text = Mathf.RoundToInt(_PastSeconds).ToString();
             yield return null;
         } while(_PastSeconds > 0.0f);
     
-        TimerCanvas.SetActive(false);
-        m_ChangeScene.LoadLevel(m_ChangeScene.m_SceneName);
+       // TimerCanvas.SetActive(false);
+        m_ChangeScene.LoadLevel(m_ChangeScene.m_NextSceneName);
     }
 }

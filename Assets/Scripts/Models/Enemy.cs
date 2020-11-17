@@ -17,8 +17,7 @@ public class Enemy : MonoBehaviour
     public float m_RayDistance = 0.5f;
 
     private void Awake() {
-        m_Rigidbody = GetComponent<Rigidbody2D>();
-        m_Player = GameObject.FindWithTag("Player");
+        m_Rigidbody = GetComponent<Rigidbody2D>();        
         m_RootEnemy = FindRootGameObject();
     }
 
@@ -49,6 +48,7 @@ public class Enemy : MonoBehaviour
     }
     
     public void Knockback(){
+        m_Player = GameObject.FindWithTag("Player");
         Vector2 _Direction = (transform.position.x - m_Player.transform.position.x > 0) 
         ? Vector2.right
         : Vector2.left;
