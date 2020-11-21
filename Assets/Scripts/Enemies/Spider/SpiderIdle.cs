@@ -27,7 +27,12 @@ public class SpiderIdle : BaseFSM
             if(_hit.collider != null){                    
                 m_FoundPlayer = true;
                 animator.SetTrigger("Attack");
+            } else {
+                m_FoundPlayer = false;
             }            
+        }
+        else {
+            m_FoundPlayer = false;
         }                   
     }
 
