@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public float m_KnockbackForce = 5f;
     public bool m_CanTakeDamage = true;
     public bool m_CanAttack = true;
+    public bool m_HasDeathAnimation = false;
     public float m_InvulnerabilityDuration = 0.15f;        
     public float m_AttackCountdown = 3f;   
     public GameObject m_RootEnemy;
@@ -31,6 +32,11 @@ public class Enemy : MonoBehaviour
         m_CanAttack = false;
         yield return new WaitForSeconds(m_AttackCountdown);
         m_CanAttack = true;
+    }
+
+    public void ExecuteAttack()
+    {
+        StartCoroutine("Attacked");
     }
 
     public GameObject FindRootGameObject(){
@@ -60,7 +66,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int Damage){
         m_Life -= Damage;
 
-        if(m_Life <= 0){
+        if(m_Life <= 0 && m_HasDeathAnimation){
             Die();
         } else {
             StartCoroutine("Damaged");  
@@ -69,7 +75,8 @@ public class Enemy : MonoBehaviour
     }       
 
     public void Die(){
-        Destroy(m_RootEnemy);
+        if(!m_HasDeathAnimation)
+            Destroy(m_RootEnemy);
     }
 
     private void OnDrawGizmos() {
