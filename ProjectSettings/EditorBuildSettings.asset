@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: 620162e64f1a64c449d39c39b0c1432a
   - enabled: 1
     path: Assets/Scenes/queen_scene.unity
-    guid: 3dfa783311a491c4a932de79e4f269e7
+    guid: 59c273b096334b640bf4b315567d823e
   - enabled: 1
     path: Assets/Scenes/overworld_v2.unity
     guid: 13801ff7cf312a84988f614e0ed1029a
@@ -74,6 +74,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CaveForest/14-Post_AracBoss_Room.unity
     guid: d37f3fe497d7ca548b9789d8993778d4
+  - enabled: 1
+    path: Assets/Scenes/queen_scene_ending.unity
+    guid: 3dfa783311a491c4a932de79e4f269e7
   - enabled: 1
     path: Assets/Scenes/End.unity
     guid: 0e7365abc54f5d64982801c3409c40fa
