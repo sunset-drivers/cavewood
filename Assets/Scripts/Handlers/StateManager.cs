@@ -112,7 +112,17 @@ public class StateManager: MonoBehaviour
             NextSceneSpawnPoint = m_NextSceneSpawnPoint,
             WasFacingRight = m_WasFacingRight
         };
-    }    
+    }
+
+    public void SetMorale(int morale)
+    {
+        m_Morale = morale;
+    }
+
+    public void GainMorale(int gained_morale)
+    {
+        m_Morale += gained_morale;
+    }
 
     public void LoseMorale(int lost_morale){
         m_Morale -= lost_morale;
