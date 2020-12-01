@@ -22,7 +22,7 @@ public class SpiderQueenIdle : StateMachineBehaviour
         m_Player = GameObject.FindGameObjectWithTag("Player");
         m_SQHead = GameObject.Find("Head");
         m_SQHeadAnim = m_SQHead.transform.Find("Sprite").GetComponent<Animator>();
-        m_BrainAnim = GameObject.Find("Brain").GetComponent<Animator>();
+        m_BrainAnim = GameObject.Find("QueenBrain").GetComponent<Animator>();
         m_LeftLegFeet = GameObject.Find("Legs").transform.Find("LeftLeg").Find("LegJount").Find("LegFeet").gameObject;
         m_RightLegFeet = GameObject.Find("Legs").transform.Find("RightLeg").Find("LegJount").Find("LegFeet").gameObject;
         m_EnemyScript = m_SQHead.GetComponent<Enemy>();
