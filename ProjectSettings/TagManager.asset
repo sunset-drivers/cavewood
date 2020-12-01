@@ -9,6 +9,7 @@ TagManager:
   - Portal
   - MoraleContainer
   - Barrier
+  - TextLine
   layers:
   - Default
   - TransparentFX
