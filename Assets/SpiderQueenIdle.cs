@@ -43,6 +43,7 @@ public class SpiderQueenIdle : StateMachineBehaviour
             m_BrainAnim.SetTrigger("Dying");
             Destroy(m_SQHead.GetComponent<Enemy>());
             Destroy(m_SQHead.GetComponent<Collider2D>());
+            Destroy(m_SQHead.GetComponent<SpiderQueenScreamControl>());
         }            
 
         if (CheckIfIsLookingRight()) {

@@ -101,7 +101,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -5175435835111090841, guid: c5c43eced2ab18f4fb53825b4f28290d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -340,11 +340,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15bbe2747b05f645bb4596e4d3935b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_GizmoSensorChecker: {fileID: 0}
   m_Life: 40
   m_Damage: 50
   m_KnockbackForce: 5
   m_CanTakeDamage: 1
   m_CanAttack: 1
+  m_HasDeathAnimation: 0
   m_InvulnerabilityDuration: 0.15
   m_AttackCountdown: 3
   m_RootEnemy: {fileID: 0}
+  m_RayDistance: 0.5
