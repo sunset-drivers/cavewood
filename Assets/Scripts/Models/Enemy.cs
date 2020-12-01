@@ -66,7 +66,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int Damage){
         m_Life -= Damage;
 
-        if(m_Life <= 0 && m_HasDeathAnimation){
+        if(m_Life <= 0 && !m_HasDeathAnimation){
             Die();
         } else {
             StartCoroutine("Damaged");  
@@ -74,9 +74,8 @@ public class Enemy : MonoBehaviour
         }
     }       
 
-    public void Die(){
-        if(!m_HasDeathAnimation)
-            Destroy(m_RootEnemy);
+    public void Die(){        
+        Destroy(m_RootEnemy);
     }
 
     private void OnDrawGizmos() {
