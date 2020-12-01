@@ -1,13 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Threading.Tasks;
+using UnityEngine;
 
-public class TriggerEvent : MonoBehaviour
+public class TriggerEvent : MonoBehaviour, hasTrigger
 {
     public enum EventTypes
     {
         OnTriggerEnter, 
         OnTriggerStay, 
         OnTriggerExit,
-        OnStart
+        OnStart,
+        Queue
     };
 
     public GameObject EventObject;
@@ -42,5 +44,12 @@ public class TriggerEvent : MonoBehaviour
             .GetComponent<hasTrigger>()
             .Trigger(EventName);
     }
-    
+
+    public void Trigger(string EventName)
+    {
+        if(EventType == EventTypes.Queue)
+            EventObject.GetComponent(EventScript)
+           .GetComponent<hasTrigger>()
+           .Trigger(EventName);
+    }
 }
