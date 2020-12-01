@@ -44,6 +44,7 @@ public class SpiderQueenIdle : StateMachineBehaviour
             Destroy(m_SQHead.GetComponent<Enemy>());
             Destroy(m_SQHead.GetComponent<Collider2D>());
             Destroy(m_SQHead.GetComponent<SpiderQueenScreamControl>());
+            Destroy(GameObject.Find("Barriers"));
         }            
 
         if (CheckIfIsLookingRight()) {

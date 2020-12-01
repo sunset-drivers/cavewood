@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Portal
   - MoraleContainer
+  - Barrier
   layers:
   - Default
   - TransparentFX
