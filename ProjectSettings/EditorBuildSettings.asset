@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: 620162e64f1a64c449d39c39b0c1432a
   - enabled: 1
+    path: Assets/Scenes/queen_scene.unity
+    guid: 3dfa783311a491c4a932de79e4f269e7
+  - enabled: 1
     path: Assets/Scenes/overworld_v2.unity
     guid: 13801ff7cf312a84988f614e0ed1029a
   - enabled: 1

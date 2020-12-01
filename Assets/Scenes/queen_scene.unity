@@ -6302,7 +6302,7 @@ MonoBehaviour:
     RightSpeakerImage: {fileID: 860933145}
     TextBox: {fileID: 860933144}
     ContinueButton: {fileID: 860933143}
-  TextSpeed: 0.01
+  TextSpeed: 0.05
   Dialogues:
   - EventName: Rainha
     Messages:
@@ -6327,7 +6327,7 @@ MonoBehaviour:
       SpeakerImage: {fileID: -8177634939102885943, guid: 0a6fde94a40543443a3b54fee8e4ee2f,
         type: 3}
       IsRightSpeaker: 0
-    - Text: "Desde esse fat\xEDdico golpe, o reino buscou de v\xE1rias formas para
+    - Text: "Desde esse fat\xEDdico golpe, o reino buscou de v\xE1rias formas de
         se reerguer. "
       SpeakerName: Queen
       SpeakerImage: {fileID: -8177634939102885943, guid: 0a6fde94a40543443a3b54fee8e4ee2f,
@@ -6626,12 +6626,32 @@ PrefabInstance:
     - target: {fileID: 8853833672904439204, guid: 65f000c3635dfae4ca8d5096dfc10294,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -13.099998
+      value: -31.599998
       objectReference: {fileID: 0}
     - target: {fileID: 8853833672904439204, guid: 65f000c3635dfae4ca8d5096dfc10294,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 22.599976
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853833672904439204, guid: 65f000c3635dfae4ca8d5096dfc10294,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853833672904439204, guid: 65f000c3635dfae4ca8d5096dfc10294,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853833672904439204, guid: 65f000c3635dfae4ca8d5096dfc10294,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853833672904439204, guid: 65f000c3635dfae4ca8d5096dfc10294,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65f000c3635dfae4ca8d5096dfc10294, type: 3}
