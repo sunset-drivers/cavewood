@@ -10,8 +10,10 @@ public class DialogueManager : MonoBehaviour, hasTrigger
     public DialogueBox DialogueBox;
     public float TextSpeed = 1f;
     public List<Dialogue> Dialogues;
+    public Message m_ShowingMessage;
+    public TriggerEvent m_TriggerEvent;
+    public string m_TriggerEventName;
     private List<Message> m_Messages;   
-    private Message m_ShowingMessage;
     private Dialogue m_ShowingDialogue;
     private bool m_DialogueStarted = false;
     private float m_SpeedUp = 1;
@@ -90,6 +92,9 @@ public class DialogueManager : MonoBehaviour, hasTrigger
         DialogueBox.RightSpeakerImage.color = new Color32(255,255,255,0);
         m_Index = 0;
         DialogueBox.BackgroundPanel.SetActive(false);
+
+        if (m_TriggerEvent)
+            m_TriggerEvent.Trigger(m_TriggerEventName);
     }
 
     private List<Message> GetDialogueMessages(string _EventName)

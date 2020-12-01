@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Cavewood.Models;
 
-public class ChangeScene : MonoBehaviour
+public class ChangeScene : MonoBehaviour, hasTrigger
 {    
     public string m_NextSceneName;    
     public string m_NextSceneSpawnPoint;
@@ -37,4 +37,8 @@ public class ChangeScene : MonoBehaviour
         ScreenManager.Instance.LoadLevel(sceneName);
     }
 
+    public void Trigger(string EventName)
+    {
+        LoadLevel(EventName);
+    }
 }
