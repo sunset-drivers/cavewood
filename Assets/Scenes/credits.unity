@@ -536,8 +536,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Programa\xE7\xE3o - Luiz Henrique Leite Paino & Vinicius Vaz Molina"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5556d30da0628d540a4d2dbe6655151e, type: 2}
+  m_sharedMaterial: {fileID: -6190577734718112472, guid: 5556d30da0628d540a4d2dbe6655151e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -811,8 +812,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Artes - F\xE1bio Rog\xE9rio Russo Junior"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5556d30da0628d540a4d2dbe6655151e, type: 2}
+  m_sharedMaterial: {fileID: -6190577734718112472, guid: 5556d30da0628d540a4d2dbe6655151e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1268,8 +1270,9 @@ MonoBehaviour:
     Americana (Fatec Americana). Seus autores o disponibilizam livre de direitos
     autorais para fins n\xE3o comerciais."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5556d30da0628d540a4d2dbe6655151e, type: 2}
+  m_sharedMaterial: {fileID: -6190577734718112472, guid: 5556d30da0628d540a4d2dbe6655151e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1581,8 +1584,9 @@ MonoBehaviour:
   m_text: "Musicas e SFX - F\xE1bio Rog\xE9rio Russo Junior & Luiz Henrique Leite
     Paino "
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5556d30da0628d540a4d2dbe6655151e, type: 2}
+  m_sharedMaterial: {fileID: -6190577734718112472, guid: 5556d30da0628d540a4d2dbe6655151e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
