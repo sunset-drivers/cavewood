@@ -25,7 +25,8 @@ public class PlayerStatus : MonoBehaviour
         m_MoraleBackground = transform.Find("bgMorale").gameObject;
         m_MoraleText = m_MoraleBackground.transform.Find("txtMorale").GetComponent<Text>();
 
-        m_MoraleContainers = GameObject.FindGameObjectsWithTag("MoraleContainer");
+        if(m_MoraleContainers.Length == 0)
+            m_MoraleContainers = GameObject.FindGameObjectsWithTag("MoraleContainer");
     }
     
     void Update()

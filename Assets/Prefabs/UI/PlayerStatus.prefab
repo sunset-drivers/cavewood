@@ -522,7 +522,17 @@ MonoBehaviour:
     type: 3}
   m_EmptyHeartSprite: {fileID: 6163953971796669878, guid: d5f05f4dcb576f2469b9db773c72a8b5,
     type: 3}
-  m_MoraleContainers: []
+  m_MoraleContainers:
+  - {fileID: 3250566660726428103}
+  - {fileID: 8564929534594371562}
+  - {fileID: 2372631358515250645}
+  - {fileID: 5663568017538098273}
+  - {fileID: 9025678482650066122}
+  - {fileID: 8221897726383182958}
+  - {fileID: 7605026118894521508}
+  - {fileID: 4191202247358340746}
+  - {fileID: 6304013633016055181}
+  - {fileID: 1780480829696243423}
   m_MoraleBackground: {fileID: 0}
   m_MoraleText: {fileID: 0}
   m_MoneyBackground: {fileID: 0}
