@@ -259,10 +259,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_GizmoSensorChecker: {fileID: 0}
   m_Life: 40
-  m_Damage: 30
+  m_Damage: 50
   m_KnockbackForce: 5
   m_CanTakeDamage: 1
   m_CanAttack: 1
+  m_HasDeathAnimation: 0
   m_InvulnerabilityDuration: 0.15
   m_AttackCountdown: 3
   m_RootEnemy: {fileID: 0}

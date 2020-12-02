@@ -335,12 +335,12 @@ PrefabInstance:
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -870
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 200
+      value: 187
       objectReference: {fileID: 0}
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
@@ -355,7 +355,7 @@ PrefabInstance:
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
@@ -365,7 +365,7 @@ PrefabInstance:
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
@@ -375,7 +375,7 @@ PrefabInstance:
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6641023559381424743, guid: ef85c42693b606d4f80b58bedf3c48dc,
         type: 3}
@@ -789,10 +789,10 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Ol\xE1, bem vindo ao mundo de Cavewood!\n\n\nInstru\xE7\xF5es:\nUse as
-    setas ou WASD para se mover.\nAperte \"Z\" para atacar.\nAperte \"X\" para pular.\n\n\n\"Z\"
-    pode ser usado para acelerar o dialogo\n\n\"Enter\" pode ser usado para pular
-    a abertura em texto.\n\n\n\nDica: Passe por cima da Vila para recuperar suas
-    energias!\n\n\nAperte ENTER para retornar ao menu."
+    setas ou WASD para se mover.\nAperte \"Z\" para atacar.\nAperte \"X\" para pular.\nAperte
+    \"ESC\" para fechar o jogo.\n\n\"Z\" pode ser usado para acelerar o dialogo\n\n\"Enter\"
+    pode ser usado para pular a abertura em texto.\n\n\n\nDica: Passe por cima da
+    Vila para recuperar suas energias!\n\n\nAperte ENTER para retornar ao menu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5556d30da0628d540a4d2dbe6655151e, type: 2}
   m_sharedMaterial: {fileID: -6190577734718112472, guid: 5556d30da0628d540a4d2dbe6655151e,
