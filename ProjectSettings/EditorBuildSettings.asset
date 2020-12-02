@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Instructions.unity
     guid: 620162e64f1a64c449d39c39b0c1432a
   - enabled: 1
+    path: Assets/Scenes/opening_scene.unity
+    guid: 9d3bfe6f53937d245a6fef053394aa82
+  - enabled: 1
     path: Assets/Scenes/queen_scene.unity
     guid: 59c273b096334b640bf4b315567d823e
   - enabled: 1
@@ -78,6 +81,6 @@ EditorBuildSettings:
     path: Assets/Scenes/queen_scene_ending.unity
     guid: 3dfa783311a491c4a932de79e4f269e7
   - enabled: 1
-    path: Assets/Scenes/End.unity
-    guid: 0e7365abc54f5d64982801c3409c40fa
+    path: Assets/Scenes/ending_credits.unity
+    guid: 118566b787d85fe419e002a59d8b094a
   m_configObjects: {}

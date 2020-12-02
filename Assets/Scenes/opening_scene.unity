@@ -251,6 +251,135 @@ MonoBehaviour:
   EventScript: ChangeScene
   EventType: 4
   EventName: overworld_v2
+--- !u!1 &1154615471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1154615472}
+  - component: {fileID: 1154615475}
+  - component: {fileID: 1154615474}
+  - component: {fileID: 1154615473}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1154615472
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154615471}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1352993947}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1154615473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154615471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1154615474}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1240448029}
+        m_MethodName: LoadLevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: queen_scene
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1154615474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154615471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1154615475
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154615471}
+  m_CullTransparentMesh: 0
 --- !u!1 &1216852115
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,8 +641,8 @@ Canvas:
   m_GameObject: {fileID: 1352993943}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 934350874}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -538,6 +667,7 @@ RectTransform:
   - {fileID: 1307192308}
   - {fileID: 1216852116}
   - {fileID: 2103515729}
+  - {fileID: 1154615472}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -665,7 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1154615471}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &1793470041
@@ -726,58 +856,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TriggerEvent: {fileID: 1073651412}
-  m_TriggerEventName: overworld_v2
+  m_TriggerEventName: queen_scene
   m_TextLinePrefab: {fileID: 8945468534907943349, guid: d4d57283e3900044dbdb5c47c1fc410e,
     type: 3}
   m_TextCanvas: {fileID: 0}
   m_Lines:
-  - '     Cavewood, um reino cercado por montanhas que o protegem como'
-  - "grandes muralhas. Posicionado no meio da rota de com\xE9rcio que conecta a "
-  - "outros dois dos maiores reinos da regi\xE3o, Cavewood se destacou por ser o
-    \xFAnico "
-  - "que possu\xEDa uma conex\xE3o segura com o mar. Ao seu redor, diferentes cavernas "
-  - "e florestas que possu\xEDam resqu\xEDcios de constru\xE7\xF5es desabitadas h\xE1
-    anos, e que "
-  - "cada vez mais o transformava em um lugar enigm\xE1tico e \xFAnico."
+  - "Cavewood, um reino que se tornou um dos locais mais invej\xE1veis e ricos"
+  - "de sua regi\xE3o. No entanto acabou se tornando um alvo para grandes ladr\xF5es
+    que"
+  - "utilizavam as cavernas e florestas do reino como ref\xFAgio."
   - 
-  - "Em pouco tempo o reino se tornou um dos locais mais invej\xE1veis e ricos "
-  - "da regi\xE3o. Entretanto com tanta riqueza e com uma localiza\xE7\xE3o desvantajosa "
-  - "para ataques. Acabou a tornando um alvo para grandes ladr\xF5es que se "
-  - "utilizavam das cavernas e florestas do reino como ref\xFAgio. "
+  - "O estopim para a pior noite de Cavewood foi a trai\xE7\xE3o do General Amon,"
+  - "um homem de grande poder e gan\xE2ncia. O traidor planejou uma grande invas\xE3o"
+  - que devastou o reino.
   - 
-  - "O estopim para a pior noite de Cavewood foi a trai\xE7\xE3o do General Amon, "
-  - "um homem de grande poder e gan\xE2ncia.  O traidor planejou uma grande invas\xE3o, "
-  - 'que se alastrou no reino. '
-  - 
-  - 'Naquele dia muitas das riquezas de cavewood foram perdidas. E dentre '
-  - 'elas estava a joia da realeza, um artefato que era protegido e fora passada
-    de '
-  - "gera\xE7\xE3o em gera\xE7\xE3o na fam\xEDlia real."
+  - Naquele dia muitas das riquezas de Cavewood foram perdidas. E entre
+  - elas estava a joia da realeza, um artefato que era protegido e fora passada de
+  - "gera\xE7\xE3o em gera\xE7\xE3o pela fam\xEDlia real."
   - 
   - "Ap\xF3s anos daquele evento conhecido como \u201Co grande assalto\u201D e com
-    o "
-  - "desaparecimento de Amon, o reino pode finalmente volta ao seu per\xEDodo de
-    paz "
-  - "e harmonia, ao reconstruir toda sua gl\xF3ria que havia sido perdida, se reerguendo "
-  - "para voltar a ser um local pr\xF3spero. A fim de reaver os tesouros que foram "
-  - 'levados durante esse periodo, a rainha Shartran instaurou o sistema de guildas '
-  - 'e fora fundada a guilda dos exploradores, onde os integrantes seriam bem '
-  - 'recompensados para cada tesouro recuperado e aquele que retornasse com a '
-  - "Joia da Realeza, al\xE9m de muitas riquezas, seria lembrado para sempre como
-    o "
-  - "grande her\xF3i ou hero\xEDna de Cavewood."
+    o"
+  - "desaparecimento de Amon, o reino retomou ao seu per\xEDodo de paz, ao"
+  - "reconstruindo toda sua gl\xF3ria que havia sido perdida."
   - 
-  - "Contudo, uma nova amea\xE7a surge para afligir o reino, ex\xE9rcitos de "
-  - 'aranhas monstruosas tomaram conta dos campos e espalharam o terror pelo '
-  - "reino. Temendo pela vida de seu povo, a rainha Shartran solicita o refor\xE7o
-    dos "
-  - exploradores mais corajosos da guilda. E assim se inicia a aventura de Nori.
-  - 
+  - "Contudo, uma nova amea\xE7a surge para afligir o reino. Temendo pela vida"
+  - "de seu povo, a rainha Shartran solicita o refor\xE7o dos exploradores mais corajosos "
+  - da guilda.
   m_UpperBound: {fileID: 0}
   m_LowerBound: {fileID: 0}
   m_OriginalLinesCount: 0
-  m_LineSpeed: 40
-  m_LineSpawnRate: 0.85
+  m_LineSpeed: 0.5
+  m_LineSpawnRate: 1
 --- !u!1 &2103515728
 GameObject:
   m_ObjectHideFlags: 0
